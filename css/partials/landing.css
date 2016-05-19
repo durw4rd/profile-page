@@ -10,6 +10,7 @@
   color: #FFF;
 }
 
+/* inital header links & logo */
 .landing-head {
   position: absolute;
   top: 30px;
@@ -38,6 +39,7 @@
   color: #FFF;
 }
 
+/* landing page central elements & animations */
 .name {
   font-family: helvetica, sans-serif;
   font-weight: 100;
