@@ -10,6 +10,34 @@
   color: #FFF;
 }
 
+.landing-head {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  display: inline-flex;
+}
+
+.landing-head li {
+  font-family: helvetica, sans-serif;
+  font-weight: 100;
+  margin-right: 30px;
+  font-size: 1em;
+  letter-spacing: 3px;
+  font-variant: small-caps;
+  list-style-type: none;
+  padding: 5px 10px 5px 10px;
+}
+
+.landing-head li:hover {
+  background-color: #00213C;
+  transition: all 1300ms ease-in-out;
+}
+
+.landing-head a {
+  text-decoration: none;
+  color: #FFF;
+}
+
 .name {
   font-family: helvetica, sans-serif;
   font-weight: 100;
