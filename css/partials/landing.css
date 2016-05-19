@@ -11,6 +11,39 @@
 }
 
 /* inital header links & logo */
+/*.logo-box {
+  height: 50px;
+  width: 100px;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  background-color: #00213C;
+  opacity: 0.3;
+}*/
+
+.logo {
+  width: 35px;
+  height: 35px;
+  color: white;
+  position: absolute;
+  top: 25px;
+  left: 50px;
+  cursor: pointer;
+  opacity: 0;
+  transform: rotate(0deg) scale(1);
+}
+
+.logo.landed {
+  opacity: 1;
+  transition: all 1000ms ease-in-out;
+}
+
+.logo:hover {
+  opacity: 1;
+  transform: rotate(360deg) scale(2);
+  transition: all 1300ms ease-in-out;
+}
+
 .landing-head {
   position: absolute;
   top: 30px;
@@ -46,6 +79,7 @@
   font-size: 4em;
   letter-spacing: 4px;
   font-variant: small-caps;
+  text-align: center;
   opacity: 0;
   transform: translateY(-50px);
 }
