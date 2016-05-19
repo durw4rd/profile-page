@@ -7,5 +7,5 @@
 		name.classList.add("landed");
     claim.classList.add("landed");
     landingLine.classList.add("landed");
-  }, 300)
+  }, 500)
 })();
