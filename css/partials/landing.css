@@ -11,16 +11,6 @@
 }
 
 /* inital header links & logo */
-/*.logo-box {
-  height: 50px;
-  width: 100px;
-  position: absolute;
-  top: 20px;
-  left: 0;
-  background-color: #00213C;
-  opacity: 0.3;
-}*/
-
 .logo {
   width: 35px;
   height: 35px;
@@ -41,7 +31,7 @@
 .logo:hover {
   opacity: 1;
   transform: rotate(360deg) scale(2);
-  transition: all 1300ms ease-in-out;
+  transition: all 700ms ease-in-out;
 }
 
 .landing-head {
@@ -51,6 +41,10 @@
   display: inline-flex;
 }
 
+nav {
+  list-style-type: none;
+}
+
 .landing-head li {
   font-family: helvetica, sans-serif;
   font-weight: 100;
@@ -58,7 +52,6 @@
   font-size: 1em;
   letter-spacing: 3px;
   font-variant: small-caps;
-  list-style-type: none;
   padding: 5px 10px 5px 10px;
 }
 
