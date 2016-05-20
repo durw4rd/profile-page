@@ -3,7 +3,6 @@
   var claim = document.querySelector('.claim');
   var landingLine = document.querySelector('.landing-line');
   var logo = document.querySelector('.logo');
-  var trigger = document.querySelector('#trigger');
   var menu = document.querySelector('#popup-menu');
 
 
@@ -15,7 +14,7 @@
   }, 500)
 
   new Waypoint({
-    element: document.querySelector('#trigger'),
+    element: document.querySelector('.landing-line'),
     handler: function(direction) {
 	  	if ( direction === "down" ) {
 	    	menu.classList.add("is-active");
