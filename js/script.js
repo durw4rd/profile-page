@@ -4,7 +4,8 @@
   var landingLine = document.querySelector('.landing-line');
   var logo = document.querySelector('.logo');
   var menu = document.querySelector('#popup-menu');
-
+  var upArrow = document.querySelector('#up-arrow');
+  var amountScrolled = 300;
 
   setTimeout(function(){
 		name.classList.add("landed");
@@ -18,10 +19,19 @@
     handler: function(direction) {
 	  	if ( direction === "down" ) {
 	    	menu.classList.add("is-active");
+        upArrow.classList.add("is-active");
 	    } else {
 	    	menu.classList.remove("is-active");
+        upArrow.classList.remove("is-active");
 	    }
 	  }
   });
+
+  $('a.back-to-top').click(function() {
+	$('html, body').animate({
+		scrollTop: 0
+	}, 700);
+	return false;
+});
 
 })();

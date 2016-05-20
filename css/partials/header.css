@@ -20,6 +20,32 @@
   transition: transform 700ms ease-in-out;
 }
 
+#up-arrow {
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  width: 35px;
+  height:40px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 2em;
+  color: #555;
+  opacity: 0;
+  transition: all 700ms ease-in-out;
+  border: 2px solid #555;
+  border-radius: 3px;
+}
+
+#up-arrow a {
+  color: #555;
+  text-decoration: none;
+}
+
+#up-arrow.is-active {
+  opacity: 1;
+  transition: all 700ms ease-in-out;
+}
+
 .popup-head {
   display: inline-flex;
   color: #333;
