@@ -1,0 +1,99 @@
+.about {
+  width: 100%;
+  background: radial-gradient(#EEEEEE, #EEEEEE, #EEEEEE, #BDBDBD);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+/* intial paragraph with surrounding lines */
+.headline {
+  margin-top: 30px;
+}
+
+#opening-line {
+  font-family: garamond, serif;
+  width: 1024px;
+  max-width: 85vw;
+  font-weight: 100;
+  font-size: 2em;
+  color: #555;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.sub-line {
+  width: 1024px;
+  max-width: 85vw;
+}
+
+/* following sections */
+.about section {
+  width: 1024px;
+  max-width: 85vw;
+  min-height: 305px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 15px 0px 15px 0px;
+  transition: all 500ms ease-in-out;
+}
+
+.about section:hover {
+  background-color: #fff;
+  transition: all 500ms ease-in-out;
+}
+
+.about section picture {
+  flex: 2;
+  margin: 15px;
+}
+
+.about section img:nth-child(1) {
+  opacity: 1;
+  transition: all 500ms ease-in-out;
+ }
+
+.about section div {
+  flex: 5;
+  margin: 15px;
+}
+
+.about section div h3 {
+  font-size: 1.5em;
+  color: #333;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+.about section div p {
+  font-family: garamond, serif;
+  font-size: 20px;
+  line-height: 26px;
+  color: #555;
+  font-weight: 100;
+}
+
+.pic-container {
+  position: relative;
+  width: 100%;
+}
+
+.pic-container img {
+  position: absolute;
+  width: 100%;
+}
+
+.pic-container img:nth-child(1) { z-index: 2; }
+.pic-container img:nth-child(2) { z-index: 1; }
+.about section:hover img:nth-child(1) {
+  opacity: 0;
+  transition: all 500ms ease-in-out;
+ }
