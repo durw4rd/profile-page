@@ -11,7 +11,7 @@
   height: 70px;
   transform: translateY(-100%);
   z-index: 99;
-  opacity: 0.85;
+  opacity: 0.9;
   transition: transform 700ms ease-in-out;
 }
 
@@ -21,14 +21,15 @@
 }
 
 #up-arrow {
+  background: #EEEEEE;
   position: fixed;
-  bottom: 30px;
+  bottom: 50px;
   right: 40px;
   width: 35px;
   height:40px;
   text-align: center;
   vertical-align: middle;
-  font-size: 2em;
+  font-size: 28px;
   color: #555;
   opacity: 0;
   transition: all 700ms ease-in-out;
