@@ -76,7 +76,16 @@
 .logo2 {
   width: 35px;
   height: 35px;
+  color: #333;
   position: absolute;
   top: 15px;
   left: 50px;
+  transform: translateX(0) rotate(0deg);
+  transition: all 2000ms ease-in-out;
+}
+
+.logo2:hover {
+  cursor: pointer;
+  transform: translateX(-140px) rotate(-720deg);
+  transition: all 2000ms ease-in-out;
 }
