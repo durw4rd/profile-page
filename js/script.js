@@ -28,10 +28,31 @@
   });
 
   $('a.back-to-top').click(function() {
-	$('html, body').animate({
-		scrollTop: 0
-	}, 700);
-	return false;
-});
+  	$('html, body').animate({
+  		scrollTop: 0
+  	}, 1000);
+  	return false;
+  });
+
+  $('a.contact').click(function() {
+  	$('html, body').animate({
+  		scrollTop: $("#contact").offset().top
+  	}, 1000);
+  	return false;
+  });
+
+  $('a.resume').click(function() {
+  	$('html, body').animate({
+  		scrollTop: $("#resume").offset().top
+  	}, 1000);
+  	return false;
+  });
+
+  $('a.work').click(function() {
+  	$('html, body').animate({
+  		scrollTop: $("#work").offset().top
+  	}, 1000);
+  	return false;
+  });
 
 })();
