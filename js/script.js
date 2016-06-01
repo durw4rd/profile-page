@@ -6,23 +6,23 @@
   var menu = document.querySelector('#popup-menu');
   var upArrow = document.querySelector('#up-arrow');
   var hidcolItem1 = document.querySelector('#hidcol-item-1');
-  var rightcolItem1 = document.querySelector('#rightcol-item-1');
+  var midcolItem1 = document.querySelector('#midcol-item-1');
   var hidcolItem2 = document.querySelector('#hidcol-item-2');
-  var rightcolItem2 = document.querySelector('#rightcol-item-2');
+  var midcolItem2 = document.querySelector('#midcol-item-2');
   var hidcolItem3 = document.querySelector('#hidcol-item-3');
-  var rightcolItem3 = document.querySelector('#rightcol-item-3');
+  var midcolItem3 = document.querySelector('#midcol-item-3');
   var hidcolItem4 = document.querySelector('#hidcol-item-4');
-  var rightcolItem4 = document.querySelector('#rightcol-item-4');
+  var midcolItem4 = document.querySelector('#midcol-item-4');
   var hidcolItem5 = document.querySelector('#hidcol-item-5');
-  var rightcolItem5 = document.querySelector('#rightcol-item-5');
+  var midcolItem5 = document.querySelector('#midcol-item-5');
   var hidcolItem6 = document.querySelector('#hidcol-item-6');
-  var rightcolItem6 = document.querySelector('#rightcol-item-6');
+  var midcolItem6 = document.querySelector('#midcol-item-6');
   var hidcolItem7 = document.querySelector('#hidcol-item-7');
-  var rightcolItem7 = document.querySelector('#rightcol-item-7');
+  var midcolItem7 = document.querySelector('#midcol-item-7');
   var hidcolItem8 = document.querySelector('#hidcol-item-8');
-  var rightcolItem8 = document.querySelector('#rightcol-item-8');
+  var midcolItem8 = document.querySelector('#midcol-item-8');
   var hidcolItem9 = document.querySelector('#hidcol-item-9');
-  var rightcolItem9 = document.querySelector('#rightcol-item-9');
+  var midcolItem9 = document.querySelector('#midcol-item-9');
 
 // delayed loading of elements on landing page
   setTimeout(function(){
@@ -47,10 +47,10 @@
   });
 
 // loading bars for individual rows in resume section
-  rightcolItem1.addEventListener('mouseover', function(){
+  midcolItem1.addEventListener('mouseover', function(){
     hidcolItem1.classList.add("loaded");
   });
-  rightcolItem1.addEventListener('click', function(){
+  midcolItem1.addEventListener('click', function(){
     if (hidcolItem1.classList.contains("loaded")) {
     hidcolItem1.classList.remove("loaded");
     } else {
@@ -58,10 +58,10 @@
     };
   });
 
-  rightcolItem2.addEventListener('mouseover', function(){
+  midcolItem2.addEventListener('mouseover', function(){
     hidcolItem2.classList.add("loaded");
   });
-  rightcolItem2.addEventListener('click', function(){
+  midcolItem2.addEventListener('click', function(){
     if (hidcolItem2.classList.contains("loaded")) {
     hidcolItem2.classList.remove("loaded");
     } else {
@@ -69,10 +69,10 @@
     };
   });
 
-  rightcolItem3.addEventListener('mouseover', function(){
+  midcolItem3.addEventListener('mouseover', function(){
     hidcolItem3.classList.add("loaded");
   });
-  rightcolItem3.addEventListener('click', function(){
+  midcolItem3.addEventListener('click', function(){
     if (hidcolItem3.classList.contains("loaded")) {
     hidcolItem3.classList.remove("loaded");
     } else {
@@ -80,10 +80,10 @@
     };
   });
 
-  rightcolItem4.addEventListener('mouseover', function(){
+  midcolItem4.addEventListener('mouseover', function(){
     hidcolItem4.classList.add("loaded");
   });
-  rightcolItem4.addEventListener('click', function(){
+  midcolItem4.addEventListener('click', function(){
     if (hidcolItem4.classList.contains("loaded")) {
     hidcolItem4.classList.remove("loaded");
     } else {
@@ -91,10 +91,10 @@
     };
   });
 
-  rightcolItem5.addEventListener('mouseover', function(){
+  midcolItem5.addEventListener('mouseover', function(){
     hidcolItem5.classList.add("loaded");
   });
-  rightcolItem5.addEventListener('click', function(){
+  midcolItem5.addEventListener('click', function(){
     if (hidcolItem5.classList.contains("loaded")) {
     hidcolItem5.classList.remove("loaded");
     } else {
@@ -102,10 +102,10 @@
     };
   });
 
-  rightcolItem6.addEventListener('mouseover', function(){
+  midcolItem6.addEventListener('mouseover', function(){
     hidcolItem6.classList.add("loaded");
   });
-  rightcolItem6.addEventListener('click', function(){
+  midcolItem6.addEventListener('click', function(){
     if (hidcolItem6.classList.contains("loaded")) {
     hidcolItem6.classList.remove("loaded");
     } else {
@@ -113,10 +113,10 @@
     };
   });
 
-  rightcolItem7.addEventListener('mouseover', function(){
+  midcolItem7.addEventListener('mouseover', function(){
     hidcolItem7.classList.add("loaded");
   });
-  rightcolItem7.addEventListener('click', function(){
+  midcolItem7.addEventListener('click', function(){
     if (hidcolItem7.classList.contains("loaded")) {
     hidcolItem7.classList.remove("loaded");
     } else {
@@ -124,10 +124,10 @@
     };
   });
 
-  rightcolItem8.addEventListener('mouseover', function(){
+  midcolItem8.addEventListener('mouseover', function(){
     hidcolItem8.classList.add("loaded");
   });
-  rightcolItem8.addEventListener('click', function(){
+  midcolItem8.addEventListener('click', function(){
     if (hidcolItem8.classList.contains("loaded")) {
     hidcolItem8.classList.remove("loaded");
     } else {
@@ -135,10 +135,10 @@
     };
   });
 
-  rightcolItem9.addEventListener('mouseover', function(){
+  midcolItem9.addEventListener('mouseover', function(){
     hidcolItem9.classList.add("loaded");
   });
-  rightcolItem9.addEventListener('click', function(){
+  midcolItem9.addEventListener('click', function(){
     if (hidcolItem9.classList.contains("loaded")) {
     hidcolItem9.classList.remove("loaded");
     } else {
