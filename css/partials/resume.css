@@ -1,6 +1,5 @@
 #resume {
   width: 100%;
-  height: 100vh;
   background: #212121;
   display: flex;
   flex-direction: column;
@@ -15,9 +14,126 @@
   text-align: center;
   letter-spacing: 3px;
   font-variant: small-caps;
-  padding: 30px 0 30px 0;
+  padding: 15px 0 15px 0;
 }
 
 #resume hr {
-  width: 30vw;
+  width: 35vw;
+}
+
+.technologies, .experience, .education, .endline {
+  width: 1024px;
+  max-width: 85vw;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 1.5px;
+}
+
+.left-col {
+  flex: 1;
+  max-width: 240px;
+  text-align: left;
+  padding: 15px;
+  list-style-type: none;
+  font-family: helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 1em;
+  font-variant: small-caps;
+  letter-spacing: 2px;
+}
+
+.mid-col {
+  flex: 2;
+  text-align: left;
+  padding: 15px;
+  list-style-type: none;
+}
+
+.mid-col li {
+  cursor: pointer;
+  transform: translateX(0) scale(1);
+  transition: all 400ms ease;
+}
+
+.mid-col li p {
+  padding: 2px 0 2px 0;
+}
+
+.mid-col li:hover {
+  transform: translateX(100px) scale(1.5);
+  transition: all 400ms ease;
+}
+
+.hidden-col {
+  flex: 1;
+  padding: 15px;
+  list-style-type: none;
+}
+
+.hidden-col li {
+  background-color: #fff;
+
+  transform: translateX(66vw);
+  transition: all 700ms ease;
+}
+
+.hidden-col li.awe {
+  width: 300px;
+  opacity: 0.7;
+}
+
+.hidden-col li.goo {
+  width: 250px;
+  opacity: 0.55;
+}
+
+.hidden-col li.cando {
+  width: 200px;
+  opacity: 0.4;
+}
+
+.hidden-col li p {
+  padding: 2px 0 2px 5px;
+  opacity: 1;
+  color: #333;
+}
+
+.hidden-col li.loaded {
+  transform: translateX(0);
+  transition: all 700ms ease;
+}
+
+.right-col {
+  flex: 3;
+  text-align: left;
+  list-style-type: none;
+  padding: 15px;
+}
+
+.title {
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.desc {
+  font-family: Garamond, serif;
+  color: #9E9E9E;
+  line-height: 26px;
+}
+
+.closing-par {
+  width: 1024px;
+  max-width: 85vw;
+  font-family: Garamond, serif;
+  font-size: 1em;
+  padding: 35px 0 55px 0;
+  text-align: center;
+  margin: auto;
+  line-height: 26px;
+}
+
+.closing-par a {
+  color: #9E9E9E;
 }
