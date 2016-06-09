@@ -50,6 +50,7 @@
 }
 
 .work-item-1-text, .work-item-2-text, .work-item-3-text, .work-item-4-text, .work-item-5-text, .work-item-6-text {
+  padding-bottom: 10px;
   opacity: 0;
   transform: translateY(-70px);
   transition: all 500ms ease-in-out;
