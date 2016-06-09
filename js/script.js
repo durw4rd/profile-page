@@ -52,7 +52,7 @@
   });
   midcolItem1.addEventListener('click', function(){
     if (hidcolItem1.classList.contains("loaded")) {
-    hidcolItem1.classList.remove("loaded");
+      hidcolItem1.classList.remove("loaded");
     } else {
       hidcolItem1.classList.add("loaded");
     };
@@ -182,12 +182,47 @@
   	return false;
   });
 
-  // efects for 'work' section
-  $('.work-item').mouseover(function() {
-    $('.work-item-text').addClass('loaded');
+  // efects for work-items in Work section
+  $('.work-item-1').mouseover(function() {
+    $('.work-item-1-text').addClass('loaded');
   });
-  $('.work-item').mouseout(function() {
-    $('.work-item-text').removeClass('loaded');
+  $('.work-item-1').mouseout(function() {
+    $('.work-item-1-text').removeClass('loaded');
   });
+
+  $('.work-item-2').mouseover(function() {
+    $('.work-item-2-text').addClass('loaded');
+  });
+  $('.work-item-2').mouseout(function() {
+    $('.work-item-2-text').removeClass('loaded');
+  });
+
+  $('.work-item-3').mouseover(function() {
+    $('.work-item-3-text').addClass('loaded');
+  });
+  $('.work-item-3').mouseout(function() {
+    $('.work-item-3-text').removeClass('loaded');
+  });
+
+  // $('.work-item-4').mouseover(function() {
+  //   $('.work-item-4-text').addClass('loaded');
+  // });
+  // $('.work-item-4').mouseout(function() {
+  //   $('.work-item-4-text').removeClass('loaded');
+  // });
+  //
+  // $('.work-item-5').mouseover(function() {
+  //   $('.work-item-5-text').addClass('loaded');
+  // });
+  // $('.work-item-5').mouseout(function() {
+  //   $('.work-item-5-text').removeClass('loaded');
+  // });
+  //
+  // $('.work-item-6').mouseover(function() {
+  //   $('.work-item-6-text').addClass('loaded');
+  // });
+  // $('.work-item-6').mouseout(function() {
+  //   $('.work-item-6-text').removeClass('loaded');
+  // });
 
 })();
