@@ -14,10 +14,14 @@
   text-align: center;
   letter-spacing: 3px;
   font-variant: small-caps;
-  padding: 15px 0 15px 0;
+  padding: 50px 0 15px 0;
 }
 
 #resume hr {
+  width: 40%;
+}
+
+.work-row hr {
   width: 35vw;
 }
 
@@ -105,11 +109,6 @@
   color: #333;
 }
 
-/*.hidden-col li.loaded {
-  transform: translateX(0);
-  transition: all 700ms ease;
-}*/
-
 .right-col {
   flex: 3;
   text-align: left;
@@ -132,9 +131,9 @@
 .opening-par {
   width: 1024px;
   max-width: 85vw;
-  font-family: Garamond, serif;
+  font-family: Helvetica, sans-serif;
   font-size: 1em;
-  padding: 5px;
+  padding: 5px 0px 5px 0px;
   margin-bottom: 15px;
   text-align: center;
   margin: auto;

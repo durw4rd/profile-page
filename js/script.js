@@ -182,4 +182,12 @@
   	return false;
   });
 
+  // efects for 'work' section
+  $('.work-item').mouseover(function() {
+    $('.work-item-text').addClass('loaded');
+  });
+  $('.work-item').mouseout(function() {
+    $('.work-item-text').removeClass('loaded');
+  });
+
 })();
