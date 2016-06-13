@@ -106,4 +106,38 @@
    justify-content: center;
  }
 
- 
+ .flex-cont div {
+   flex: 1;
+   height: 300px;
+   transition: all 500ms ease-in-out;
+   opacity: 0.6;
+   margin: 20px 5px 60px 5px;
+   text-align: center;
+  }
+
+.flex-cont div h1 {
+  opacity: 1;
+  color: white;
+  letter-spacing: 3px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 100;
+  font-variant: small-caps;
+}
+
+ .flex-cont div:hover {
+   flex: 1.5;
+   transition: all 500ms ease-in-out;
+   opacity: 1;
+ }
+
+ .box1 {
+   background-color: #3949AB;
+ }
+
+ .box2 {
+   background-color: #e53935;
+ }
+
+ .box3 {
+   background-color: #00897B;
+ }
