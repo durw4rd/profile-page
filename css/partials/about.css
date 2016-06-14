@@ -34,6 +34,24 @@
   max-width: 85vw;
 }
 
+#about h1 {
+  font-family: helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 2.5em;
+  text-align: center;
+  letter-spacing: 3px;
+  font-variant: small-caps;
+  padding: 50px 0 15px 0;
+}
+
+#about h3 {
+  font-size: 1.5em;
+  color: #333;
+  font-weight: 100;
+  letter-spacing: 1px;
+  margin: 0 0 15px 0px;
+}
+
 /* following sections */
 .about section {
   width: 1024px;
@@ -42,7 +60,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 15px 0px 15px 0px;
+  margin: 35px 0px 50px 0px;
   transition: all 500ms ease-in-out;
 }
 
@@ -96,48 +114,96 @@
 .about section:hover img:nth-child(1) {
   opacity: 0;
   transition: all 500ms ease-in-out;
- }
+}
 
- .flex-cont {
+.me-on-team {
+  margin: 30px 0 30px 0;
+}
+
+.me-on-team h3 {
+  text-align: center;
+}
+
+.flex-cont {
    width: 1024px;
    max-width: 85vw;
    display: flex;
    flex-direction: row;
    justify-content: center;
+}
+
+.flex-cont div h2 {
+  opacity: 1;
+  color: white;
+  letter-spacing: 3px;
+  font-weight: 100;
+  font-variant: small-caps;
+  font-size: 40px;
+  padding: 5px;
+  line-height: 240px;
+  transition: all 500ms ease;
+}
+
+.flex-cont div h2.loaded {
+  opacity: 0;
+  transition: all 500ms ease;
+}
+
+ .box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover {
+   flex: 2;
+   transition: all 500ms ease-in-out;
+   opacity: 1;
+   background-color: #333;
  }
 
- .flex-cont div {
+.box1, .box2, .box3, .box4, .box5 {
    flex: 1;
+   position: relative;
    height: 300px;
    transition: all 500ms ease-in-out;
    opacity: 0.6;
    margin: 20px 5px 60px 5px;
    text-align: center;
-  }
-
-.flex-cont div h1 {
-  opacity: 1;
-  color: white;
-  letter-spacing: 3px;
-  font-family: Helvetica, sans-serif;
-  font-weight: 100;
-  font-variant: small-caps;
+   background-color: #999;
 }
 
- .flex-cont div:hover {
-   flex: 1.5;
-   transition: all 500ms ease-in-out;
-   opacity: 1;
- }
+.popup1, .popup2, .popup3, .popup4, .popup5 {
+  position: absolute;
+  top: 15%;
+  padding: 0 20px 0 20px;
+  background-color: transparent;
+  color: white;
+  opacity: 0;
+  transform: translateY(-150px);
+  transition: all 500ms ease;
+}
 
- .box1 {
-   background-color: #3949AB;
- }
+.popup1 p, .popup2 p, .popup3 p, .popup4 p, .popup5 p {
+  line-height: 20px;
+}
 
- .box2 {
-   background-color: #e53935;
- }
+.popup1 h4, .popup2 h4, .popup3 h4, .popup4 h4, .popup5 h4 {
+  font-family: helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 1.5em;
+  font-variant: small-caps;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+  color: white;
+}
 
- .box3 {
-   background-color: #00897B;
- }
+.box1-line, .box2-line, .box3-line, .box4-line, .box5-line {
+  width: 0;
+  transition: all 500ms 300ms ease;
+}
+
+.box1-line.loaded, .box2-line.loaded, .box3-line.loaded, .box4-line.loaded, .box5-line.loaded {
+  width: 60%;
+  transition: all 500ms 500ms ease;
+}
+
+.popup1.loaded, .popup2.loaded, .popup3.loaded, .popup4.loaded, .popup5.loaded {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all 500ms 300ms ease;
+}
