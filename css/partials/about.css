@@ -149,37 +149,88 @@
   transition: all 500ms ease;
 }
 
- .box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover {
-   flex: 2;
-   transition: all 500ms ease-in-out;
-   opacity: 1;
-   background-color: #333;
- }
+.box1 {
+  background: url("../../images/typo.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.box2 {
+  background: url("../../images/photo.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.box3 {
+  background: url("../../images/road.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.box4 {
+  background: url("../../images/love.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.box5 {
+  background: url("../../images/social.jpg") no-repeat center center;
+  background-size: cover;
+}
 
 .box1, .box2, .box3, .box4, .box5 {
    flex: 1;
    position: relative;
    height: 300px;
    transition: all 500ms ease-in-out;
-   opacity: 0.6;
+   opacity: 1;
    margin: 20px 5px 60px 5px;
    text-align: center;
-   background-color: #999;
+}
+
+.box1 span, .box2 span, .box3 span, .box4 span, .box5 span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.0);
+  transition: all 500ms ease-in-out;
+}
+
+.box1:hover span, .box2:hover span, .box3:hover span, .box4:hover span, .box5:hover span {
+  opacity: 1;
+  background: rgba(0,0,0,0.6);
+  transition: all 500ms ease-in-out;
+}
+
+.inner-box-1, .inner-box-2, .inner-box-3, .inner-box-4, .inner-box-5 {
+  position: relative;
+  opacity: 1;
+}
+
+.box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover {
+  flex: 2;
+  transition: all 500ms ease-in-out;
+  opacity: 1;
+  background-color: #333;
 }
 
 .popup1, .popup2, .popup3, .popup4, .popup5 {
   position: absolute;
-  top: 15%;
+  top: 10%;
   padding: 0 20px 0 20px;
-  background-color: transparent;
   color: white;
   opacity: 0;
   transform: translateY(-150px);
   transition: all 500ms ease;
 }
 
+.popup1.loaded, .popup2.loaded, .popup3.loaded, .popup4.loaded, .popup5.loaded {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all 500ms 300ms ease;
+}
+
 .popup1 p, .popup2 p, .popup3 p, .popup4 p, .popup5 p {
-  line-height: 20px;
+  line-height: 26px;
+  opacity: 1;
 }
 
 .popup1 h4, .popup2 h4, .popup3 h4, .popup4 h4, .popup5 h4 {
@@ -200,10 +251,4 @@
 .box1-line.loaded, .box2-line.loaded, .box3-line.loaded, .box4-line.loaded, .box5-line.loaded {
   width: 60%;
   transition: all 500ms 500ms ease;
-}
-
-.popup1.loaded, .popup2.loaded, .popup3.loaded, .popup4.loaded, .popup5.loaded {
-  opacity: 1;
-  transform: translateY(0px);
-  transition: all 500ms 300ms ease;
 }
