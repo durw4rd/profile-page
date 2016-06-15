@@ -63,14 +63,34 @@
 
 .work-item-1-text, .work-item-2-text, .work-item-3-text, .work-item-4-text, .work-item-5-text, .work-item-6-text {
   position: relative;
-  top: -150px;
+  top: -160px;
   color: #333;
-  border: 2px dashed #333;
+  font-family: garamond, serif;
+  font-size: 16px;
+  /*border: 2px dashed #333;*/
   padding: 5px 10px 5px 10px;
   opacity: 0;
   line-height: 22px;
   transform: translateY(-100px);
   transition: all 500ms ease;
+}
+
+.work-item-1-butt, .work-item-2-butt, .work-item-3-butt {
+  font-family: helvetica, sans-serif;
+  letter-spacing: 1px;
+  border-radius: 0px;
+  border: 2px solid #333;
+  margin-top: 5px;
+  padding: 5px 10px 5px 10px;
+  background-color: transparent;
+  transition: all 500ms ease;
+  cursor: pointer;
+}
+
+.work-item-1-butt:hover, .work-item-2-butt:hover, .work-item-3-butt:hover {
+  background-color: #333;
+  transition: all 500ms ease;
+  color: white;
 }
 
 .work-item-1-text.loaded, .work-item-2-text.loaded, .work-item-3-text.loaded, .work-item-4-text.loaded, .work-item-5-text.loaded, .work-item-6-text.loaded {

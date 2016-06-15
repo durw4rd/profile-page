@@ -46,6 +46,64 @@
 	  }
   });
 
+// Hidden elements in about section
+
+$('.box1').mouseover(function() {
+  $('.popup1').addClass('loaded');
+  $('.box1-head').addClass('loaded');
+  $('.box1-line').addClass('loaded');
+});
+$('.box1').mouseout(function() {
+  $('.popup1').removeClass('loaded');
+  $('.box1-head').removeClass('loaded');
+  $('.box1-line').removeClass('loaded');
+});
+
+$('.box2').mouseover(function() {
+  $('.popup2').addClass('loaded');
+  $('.box2-head').addClass('loaded');
+  $('.box2-line').addClass('loaded');
+});
+$('.box2').mouseout(function() {
+  $('.popup2').removeClass('loaded');
+  $('.box2-head').removeClass('loaded');
+  $('.box2-line').removeClass('loaded');
+});
+
+$('.box3').mouseover(function() {
+  $('.popup3').addClass('loaded');
+  $('.box3-head').addClass('loaded');
+  $('.box3-line').addClass('loaded');
+});
+$('.box3').mouseout(function() {
+  $('.popup3').removeClass('loaded');
+  $('.box3-head').removeClass('loaded');
+  $('.box3-line').removeClass('loaded');
+});
+
+$('.box4').mouseover(function() {
+  $('.popup4').addClass('loaded');
+  $('.box4-head').addClass('loaded');
+  $('.box4-line').addClass('loaded');
+});
+$('.box4').mouseout(function() {
+  $('.popup4').removeClass('loaded');
+  $('.box4-head').removeClass('loaded');
+  $('.box4-line').removeClass('loaded');
+});
+
+$('.box5').mouseover(function() {
+  $('.popup5').addClass('loaded');
+  $('.box5-head').addClass('loaded');
+  $('.box5-line').addClass('loaded');
+});
+$('.box5').mouseout(function() {
+  $('.popup5').removeClass('loaded');
+  $('.box5-head').removeClass('loaded');
+  $('.box5-line').removeClass('loaded');
+});
+
+
 // loading bars for individual rows in resume section
   midcolItem1.addEventListener('mouseover', function(){
     hidcolItem1.classList.add("loaded");
@@ -155,6 +213,13 @@
   });
 
   $('a.down-arrow').click(function() {
+    $('html, body').animate({
+      scrollTop: $("#about").offset().top
+    }, 1000);
+    return false;
+  });
+
+  $('a.about').click(function() {
     $('html, body').animate({
       scrollTop: $("#about").offset().top
     }, 1000);
