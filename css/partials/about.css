@@ -116,7 +116,7 @@
 
 .pic-container img:nth-child(1) { z-index: 2; }
 .pic-container img:nth-child(2) { z-index: 1; }
-.about section:hover img:nth-child(1) {
+#about section:hover img:nth-child(1) {
   opacity: 0;
   transition: all 500ms ease-in-out;
 }
