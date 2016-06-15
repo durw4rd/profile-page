@@ -5,3 +5,5 @@ Page for personal presentation and showcase of my portfolio, focused on testing 
 For opening the page, clone whole repository and open <tt>index.html</tt> in your browser.
 
 Live version available at: http://profile.michalfasanek.cz.
+
+Tested on the current versions of Chrome & Mozilla.
