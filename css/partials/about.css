@@ -1,4 +1,4 @@
-.about {
+#about {
   width: 100%;
   background: radial-gradient(#EEEEEE, #EEEEEE, #EEEEEE, #BDBDBD);
   display: flex;
@@ -9,7 +9,7 @@
 
 /* intial paragraph with surrounding lines */
 .headline {
-  margin-top: 30px;
+  margin: 80px 0 50px 0;
 }
 
 #opening-line {
@@ -46,14 +46,19 @@
 
 #about h3 {
   font-size: 1.5em;
-  color: #333;
+  width: 1024px;
+  max-width: 85vw;
+  background-color: #333;
+  color: white;
+  text-align: center;
   font-weight: 100;
   letter-spacing: 1px;
-  margin: 0 0 15px 0px;
+  margin: 30px 0 30px 0px;
+  padding: 5px;
 }
 
 /* following sections */
-.about section {
+#about section {
   width: 1024px;
   max-width: 85vw;
   min-height: 305px;
@@ -64,34 +69,34 @@
   transition: all 500ms ease-in-out;
 }
 
-.about section:hover {
+#about section:hover {
   background-color: #fff;
   transition: all 500ms ease-in-out;
 }
 
-.about section picture {
+#about section picture {
   flex: 2;
   margin: 15px;
 }
 
-.about section img:nth-child(1) {
+#about section img:nth-child(1) {
   opacity: 1;
   transition: all 500ms ease-in-out;
  }
 
-.about section div {
+#about section div {
   flex: 5;
   margin: 15px;
 }
 
-.about section div h3 {
+#about section div h3 {
   font-size: 1.5em;
   color: #333;
   font-weight: 100;
   letter-spacing: 1px;
 }
 
-.about section div p {
+#about section div p {
   font-family: garamond, serif;
   font-size: 20px;
   line-height: 26px;
@@ -229,6 +234,7 @@
 }
 
 .popup1 p, .popup2 p, .popup3 p, .popup4 p, .popup5 p {
+  font-family: garamond, serif;
   line-height: 26px;
   opacity: 1;
 }

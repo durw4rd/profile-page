@@ -219,6 +219,13 @@ $('.box5').mouseout(function() {
     return false;
   });
 
+  $('a.about').click(function() {
+    $('html, body').animate({
+      scrollTop: $("#about").offset().top
+    }, 1000);
+    return false;
+  });
+
   $('a.contact').click(function() {
   	$('html, body').animate({
   		scrollTop: $("#contact").offset().top
