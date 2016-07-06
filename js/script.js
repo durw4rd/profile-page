@@ -5,25 +5,7 @@
   var logo = document.querySelector('.logo');
   var menu = document.querySelector('#popup-menu');
   var upArrow = document.querySelector('#up-arrow');
-  var hidcolItem1 = document.querySelector('#hidcol-item-1');
-  var midcolItem1 = document.querySelector('#midcol-item-1');
-  var hidcolItem2 = document.querySelector('#hidcol-item-2');
-  var midcolItem2 = document.querySelector('#midcol-item-2');
-  var hidcolItem3 = document.querySelector('#hidcol-item-3');
-  var midcolItem3 = document.querySelector('#midcol-item-3');
-  var hidcolItem4 = document.querySelector('#hidcol-item-4');
-  var midcolItem4 = document.querySelector('#midcol-item-4');
-  var hidcolItem5 = document.querySelector('#hidcol-item-5');
-  var midcolItem5 = document.querySelector('#midcol-item-5');
-  var hidcolItem6 = document.querySelector('#hidcol-item-6');
-  var midcolItem6 = document.querySelector('#midcol-item-6');
-  var hidcolItem7 = document.querySelector('#hidcol-item-7');
-  var midcolItem7 = document.querySelector('#midcol-item-7');
-  var hidcolItem8 = document.querySelector('#hidcol-item-8');
-  var midcolItem8 = document.querySelector('#midcol-item-8');
-  var hidcolItem9 = document.querySelector('#hidcol-item-9');
-  var midcolItem9 = document.querySelector('#midcol-item-9');
-
+  
 // delayed loading of elements on landing page
   setTimeout(function(){
 		name.classList.add("landed");
@@ -105,103 +87,68 @@ $('.box5').mouseout(function() {
 
 
 // loading bars for individual rows in resume section
-  midcolItem1.addEventListener('mouseover', function(){
-    hidcolItem1.classList.add("loaded");
+
+  $('#midcol-item-1').mouseover(function() {
+    $('#hidcol-item-1').addClass('loaded');
   });
-  midcolItem1.addEventListener('click', function(){
-    if (hidcolItem1.classList.contains("loaded")) {
-      hidcolItem1.classList.remove("loaded");
-    } else {
-      hidcolItem1.classList.add("loaded");
-    };
+  $('#midcol-item-1').click(function() {
+    $('#hidcol-item-1').toggleClass('loaded');
   });
 
-  midcolItem2.addEventListener('mouseover', function(){
-    hidcolItem2.classList.add("loaded");
+  $('#midcol-item-2').mouseover(function() {
+    $('#hidcol-item-2').addClass('loaded');
   });
-  midcolItem2.addEventListener('click', function(){
-    if (hidcolItem2.classList.contains("loaded")) {
-    hidcolItem2.classList.remove("loaded");
-    } else {
-      hidcolItem2.classList.add("loaded");
-    };
+  $('#midcol-item-2').click(function() {
+    $('#hidcol-item-2').toggleClass('loaded');
   });
 
-  midcolItem3.addEventListener('mouseover', function(){
-    hidcolItem3.classList.add("loaded");
+  $('#midcol-item-3').mouseover(function() {
+    $('#hidcol-item-3').addClass('loaded');
   });
-  midcolItem3.addEventListener('click', function(){
-    if (hidcolItem3.classList.contains("loaded")) {
-    hidcolItem3.classList.remove("loaded");
-    } else {
-      hidcolItem3.classList.add("loaded");
-    };
+  $('#midcol-item-3').click(function() {
+    $('#hidcol-item-3').toggleClass('loaded');
   });
 
-  midcolItem4.addEventListener('mouseover', function(){
-    hidcolItem4.classList.add("loaded");
+  $('#midcol-item-4').mouseover(function() {
+    $('#hidcol-item-4').addClass('loaded');
   });
-  midcolItem4.addEventListener('click', function(){
-    if (hidcolItem4.classList.contains("loaded")) {
-    hidcolItem4.classList.remove("loaded");
-    } else {
-      hidcolItem4.classList.add("loaded");
-    };
+  $('#midcol-item-4').click(function() {
+    $('#hidcol-item-4').toggleClass('loaded');
   });
 
-  midcolItem5.addEventListener('mouseover', function(){
-    hidcolItem5.classList.add("loaded");
+  $('#midcol-item-5').mouseover(function() {
+    $('#hidcol-item-5').addClass('loaded');
   });
-  midcolItem5.addEventListener('click', function(){
-    if (hidcolItem5.classList.contains("loaded")) {
-    hidcolItem5.classList.remove("loaded");
-    } else {
-      hidcolItem5.classList.add("loaded");
-    };
+  $('#midcol-item-5').click(function() {
+    $('#hidcol-item-5').toggleClass('loaded');
   });
 
-  midcolItem6.addEventListener('mouseover', function(){
-    hidcolItem6.classList.add("loaded");
+  $('#midcol-item-6').mouseover(function() {
+    $('#hidcol-item-6').addClass('loaded');
   });
-  midcolItem6.addEventListener('click', function(){
-    if (hidcolItem6.classList.contains("loaded")) {
-    hidcolItem6.classList.remove("loaded");
-    } else {
-      hidcolItem6.classList.add("loaded");
-    };
+  $('#midcol-item-6').click(function() {
+    $('#hidcol-item-6').toggleClass('loaded');
   });
 
-  midcolItem7.addEventListener('mouseover', function(){
-    hidcolItem7.classList.add("loaded");
+  $('#midcol-item-7').mouseover(function() {
+    $('#hidcol-item-7').addClass('loaded');
   });
-  midcolItem7.addEventListener('click', function(){
-    if (hidcolItem7.classList.contains("loaded")) {
-    hidcolItem7.classList.remove("loaded");
-    } else {
-      hidcolItem7.classList.add("loaded");
-    };
+  $('#midcol-item-7').click(function() {
+    $('#hidcol-item-7').toggleClass('loaded');
   });
 
-  midcolItem8.addEventListener('mouseover', function(){
-    hidcolItem8.classList.add("loaded");
+  $('#midcol-item-8').mouseover(function() {
+    $('#hidcol-item-8').addClass('loaded');
   });
-  midcolItem8.addEventListener('click', function(){
-    if (hidcolItem8.classList.contains("loaded")) {
-    hidcolItem8.classList.remove("loaded");
-    } else {
-      hidcolItem8.classList.add("loaded");
-    };
+  $('#midcol-item-8').click(function() {
+    $('#hidcol-item-8').toggleClass('loaded');
   });
 
-  midcolItem9.addEventListener('mouseover', function(){
-    hidcolItem9.classList.add("loaded");
+  $('#midcol-item-9').mouseover(function() {
+    $('#hidcol-item-9').addClass('loaded');
   });
-  midcolItem9.addEventListener('click', function(){
-    if (hidcolItem9.classList.contains("loaded")) {
-    hidcolItem9.classList.remove("loaded");
-    } else {
-      hidcolItem9.classList.add("loaded");
-    };
+  $('#midcol-item-9').click(function() {
+    $('#hidcol-item-9').toggleClass('loaded');
   });
 
 // scroll animations for navigation elements throughout the page
