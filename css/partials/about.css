@@ -86,6 +86,7 @@
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  /*flex-wrap: wrap;*/
   margin: 35px 0px 50px 0px;
   -webkit-transition: all 500ms ease-in-out;
           transition: all 500ms ease-in-out;
@@ -98,10 +99,10 @@
 }
 
 #about section picture {
-  -webkit-box-flex: 2;
-  -webkit-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  -webkit-box-flex: 0 0 275px;
+  -webkit-flex: 0 0 275px;
+      -ms-flex: 0 0 275px;
+          flex: 0 0 275px;
   margin: 15px;
 }
 
@@ -113,10 +114,10 @@
  }
 
 #about section div {
-  -webkit-box-flex: 5;
-  -webkit-flex: 5;
-      -ms-flex: 5;
-          flex: 5;
+  -webkit-box-flex: 1 1 300px;
+  -webkit-flex: 1 1 300px;
+      -ms-flex: 1 1 300px;
+          flex: 1 1 500px;
   margin: 15px;
 }
 
