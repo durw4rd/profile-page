@@ -123,7 +123,7 @@ var main = function(){
     });
   };
 
-  for(i=1; i<=3; i++) {
+  for(i=1; i<=6; i++) {
     workItemLoad([i]);
   };
 
