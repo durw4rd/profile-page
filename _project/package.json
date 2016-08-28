@@ -1,0 +1,23 @@
+{
+  "name": "mf-profile",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/durw4rd/profile-page.git"
+  },
+  "author": "Michal Fasanek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/durw4rd/profile-page/issues"
+  },
+  "homepage": "https://github.com/durw4rd/profile-page#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  }
+}
