@@ -1,4 +1,6 @@
-body {
-  width: percentage(5/7);
-  margin: auto;
-}
+@import 'partials/header.css';
+@import 'partials/landing.css';
+@import 'partials/about.css';
+@import 'partials/resume.css';
+@import 'partials/work.css';
+@import 'partials/footer.css';

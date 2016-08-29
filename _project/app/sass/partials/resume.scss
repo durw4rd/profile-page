@@ -1,0 +1,198 @@
+#resume {
+  width: 100%;
+  background: #212121;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+}
+
+#resume h1 {
+  font-family: helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 2.5em;
+  text-align: center;
+  letter-spacing: 3px;
+  font-variant: small-caps;
+  padding: 50px 0 15px 0;
+}
+
+#resume hr {
+  width: 40%;
+}
+
+.work-row hr {
+  width: 35vw;
+}
+
+.technologies, .experience, .education, .endline {
+  width: 1024px;
+  max-width: 85vw;
+  margin: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: 1.5px;
+}
+
+.left-col {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  max-width: 240px;
+  text-align: left;
+  padding: 15px;
+  list-style-type: none;
+  font-family: helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 1em;
+  font-variant: small-caps;
+  letter-spacing: 2px;
+}
+
+.mid-col {
+  -webkit-box-flex: 2;
+  -webkit-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  text-align: left;
+  padding: 15px;
+  list-style-type: none;
+}
+
+.mid-col li {
+  cursor: pointer;
+  -webkit-transform: translateX(0) scale(1);
+      -ms-transform: translateX(0) scale(1);
+          transform: translateX(0) scale(1);
+  -webkit-transition: all 400ms ease;
+          transition: all 400ms ease;
+}
+
+.mid-col li p {
+  padding: 2px 0 2px 0;
+}
+
+.mid-col li:hover {
+  -webkit-transform: translateX(100px) scale(1.5);
+      -ms-transform: translateX(100px) scale(1.5);
+          transform: translateX(100px) scale(1.5);
+  -webkit-transition: all 400ms ease;
+          transition: all 400ms ease;
+}
+
+.hidden-col {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 15px;
+  list-style-type: none;
+}
+
+.hidden-col li {
+  background-color: #fff;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transform: translateX(-250px);
+      -ms-transform: translateX(-250px);
+          transform: translateX(-250px);
+  -webkit-transition: all 700ms ease;
+          transition: all 700ms ease;
+}
+
+.hidden-col li.awe.loaded {
+  width: 300px;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: all 700ms ease;
+          transition: all 700ms ease;
+}
+
+.hidden-col li.goo.loaded {
+  width: 250px;
+  opacity: 0.55;
+  filter: alpha(opacity=55);
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: all 700ms ease;
+          transition: all 700ms ease;
+}
+
+.hidden-col li.cando.loaded {
+  width: 200px;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: all 700ms ease;
+          transition: all 700ms ease;
+}
+
+.hidden-col li p {
+  padding: 2px 0 2px 5px;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  color: #333;
+}
+
+.right-col {
+  -webkit-box-flex: 3;
+  -webkit-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  text-align: left;
+  list-style-type: none;
+  padding: 15px;
+}
+
+.title {
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.desc {
+  font-family: Garamond, serif;
+  color: #9E9E9E;
+  line-height: 26px;
+}
+
+.opening-par {
+  width: 1024px;
+  max-width: 85vw;
+  font-family: Helvetica, sans-serif;
+  font-size: 1em;
+  padding: 5px 0px 5px 0px;
+  margin-bottom: 15px;
+  text-align: center;
+  margin: auto;
+  line-height: 26px;
+  background-color: #fff;
+  color: #333;
+}
+
+.opening-par a {
+  color: #616161;
+}
