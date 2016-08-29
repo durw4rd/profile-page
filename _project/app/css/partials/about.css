@@ -7,254 +7,209 @@
   flex-direction: column;
   -ms-flex-align: center;
   align-items: center;
-  margin: auto; }
-
-/* intial paragraph with surrounding lines */
-.headline {
-  margin: 80px 0 50px 0; }
-
-#opening-line {
-  font-family: garamond, serif;
-  width: 1024px;
-  max-width: 85vw;
-  font-weight: 100;
-  font-size: 28px;
-  color: #555;
-  text-align: center;
-  letter-spacing: 1px;
-  margin-top: 30px;
-  margin-bottom: 30px; }
-
-.bold {
-  font-weight: bold; }
-
-.sub-line {
-  width: 1024px;
-  max-width: 85vw; }
-
-#about h1 {
-  font-family: helvetica, sans-serif;
-  font-weight: 100;
-  font-size: 2.5em;
-  text-align: center;
-  letter-spacing: 3px;
-  font-variant: small-caps;
-  padding: 50px 0 15px 0; }
-
-#about h3 {
-  font-size: 1.5em;
-  width: 1024px;
-  max-width: 85vw;
-  background-color: #333;
-  color: white;
-  text-align: center;
-  font-weight: 100;
-  letter-spacing: 1px;
-  margin: 30px 0 30px 0px;
-  padding: 5px; }
-
-/* following sections */
-#about .my-intro {
-  width: 1024px;
-  max-width: 85vw;
-  min-height: 305px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-pack: center;
-  justify-content: center;
-  /*flex-wrap: wrap;*/
-  margin: 35px 0px 50px 0px;
-  transition: all 500ms ease-in-out; }
-  #about .my-intro.mobile {
-    -ms-flex-direction: column;
-    flex-direction: column;
-    min-height: 0; }
-    #about .my-intro.mobile p {
-      margin-top: 50px; }
-    #about .my-intro.mobile div {
-      -ms-flex: 1 1 200px;
-      flex: 1 1 200px; }
-
-#about section:hover {
-  background-color: #fff;
-  transition: all 500ms ease-in-out; }
-
-#about section picture {
-  -ms-flex: 0 0 275px;
-  flex: 0 0 275px;
-  margin: 15px; }
-
-#about section img:nth-child(1) {
-  opacity: 1;
-  filter: alpha(opacity=100);
-  transition: all 500ms ease-in-out; }
-
-#about section div {
-  -ms-flex: 1 1 500px;
-  flex: 1 1 500px;
-  margin: 15px; }
-
-#about section div h3 {
-  font-size: 1.5em;
-  color: #333;
-  font-weight: 100;
-  letter-spacing: 1px; }
-
-#about section div p {
-  font-family: garamond, serif;
-  font-size: 20px;
-  line-height: 26px;
-  color: #555;
-  font-weight: 100; }
-
-.pic-container {
-  position: relative;
-  width: 100%; }
-
-.pic-container img {
-  position: absolute;
-  width: 100%; }
-
-.pic-container img:nth-child(1) {
-  z-index: 2; }
-
-.pic-container img:nth-child(2) {
-  z-index: 1; }
-
-#about section:hover img:nth-child(1) {
-  opacity: 0;
-  filter: alpha(opacity=0);
-  transition: all 500ms ease-in-out; }
-
-.me-on-team {
-  margin: 30px 0 30px 0; }
-
-.me-on-team h3 {
-  text-align: center; }
-
-.flex-cont {
-  width: 1024px;
-  max-width: 85vw;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-pack: center;
-  justify-content: center; }
-
-.flex-cont div h2 {
-  opacity: 1;
-  filter: alpha(opacity=100);
-  color: white;
-  letter-spacing: 3px;
-  font-weight: 100;
-  font-variant: small-caps;
-  font-size: 40px;
-  padding: 5px;
-  line-height: 240px;
-  transition: all 500ms ease; }
-
-.flex-cont div h2.loaded {
-  opacity: 0;
-  filter: alpha(opacity=0);
-  transition: all 500ms ease; }
-
-.box1 {
-  background: url("../../images/typo.jpg") no-repeat center center;
-  background-size: cover; }
-
-.box2 {
-  background: url("../../images/photo.jpg") no-repeat center center;
-  background-size: cover; }
-
-.box3 {
-  background: url("../../images/road.jpg") no-repeat center center;
-  background-size: cover; }
-
-.box4 {
-  background: url("../../images/love.jpg") no-repeat center center;
-  background-size: cover; }
-
-.box5 {
-  background: url("../../images/social.jpg") no-repeat center center;
-  background-size: cover; }
-
-.box1, .box2, .box3, .box4, .box5 {
-  -ms-flex: 1;
-  flex: 1;
-  position: relative;
-  height: 300px;
-  transition: all 500ms ease-in-out;
-  opacity: 1;
-  filter: alpha(opacity=100);
-  margin: 20px 5px 60px 5px;
-  text-align: center; }
-
-.box1 span, .box2 span, .box3 span, .box4 span, .box5 span {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: transparent;
-  transition: all 500ms ease-in-out; }
-
-.box1:hover span, .box2:hover span, .box3:hover span, .box4:hover span, .box5:hover span {
-  opacity: 1;
-  filter: alpha(opacity=100);
-  background: rgba(0, 0, 0, 0.6);
-  transition: all 500ms ease-in-out; }
-
-.inner-box-1, .inner-box-2, .inner-box-3, .inner-box-4, .inner-box-5 {
-  position: relative;
-  opacity: 1;
-  filter: alpha(opacity=100); }
-
-.box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover {
-  -ms-flex: 2;
-  flex: 2;
-  transition: all 500ms ease-in-out;
-  opacity: 1;
-  filter: alpha(opacity=100);
-  background-color: #333; }
-
-.popup1, .popup2, .popup3, .popup4, .popup5 {
-  position: absolute;
-  top: 10%;
-  padding: 0 20px 0 20px;
-  color: white;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  transform: translateY(-150px);
-  transition: all 500ms ease; }
-
-.popup1.loaded, .popup2.loaded, .popup3.loaded, .popup4.loaded, .popup5.loaded {
-  opacity: 1;
-  filter: alpha(opacity=100);
-  transform: translateY(0px);
-  transition: all 500ms 300ms ease; }
-
-.popup1 p, .popup2 p, .popup3 p, .popup4 p, .popup5 p {
-  font-family: garamond, serif;
-  line-height: 26px;
-  opacity: 1;
-  filter: alpha(opacity=100); }
-
-.popup1 h4, .popup2 h4, .popup3 h4, .popup4 h4, .popup5 h4 {
-  font-family: helvetica, sans-serif;
-  font-weight: 100;
-  font-size: 1.5em;
-  font-variant: small-caps;
-  letter-spacing: 2px;
-  margin-bottom: 0;
-  color: white; }
-
-.box1-line, .box2-line, .box3-line, .box4-line, .box5-line {
-  width: 0;
-  transition: all 500ms 300ms ease; }
-
-.box1-line.loaded, .box2-line.loaded, .box3-line.loaded, .box4-line.loaded, .box5-line.loaded {
-  width: 60%;
-  transition: all 500ms 500ms ease; }
+  margin: auto;
+  /* intial paragraph with surrounding lines */
+  /* following sections */ }
+  #about .headline {
+    margin: 80px 0 50px 0; }
+    #about .headline .sub-line {
+      width: 1024px;
+      max-width: 85vw; }
+    #about .headline #opening-line {
+      font-family: garamond, serif;
+      width: 1024px;
+      max-width: 85vw;
+      font-weight: 100;
+      font-size: 28px;
+      color: #555;
+      text-align: center;
+      letter-spacing: 1px;
+      margin-top: 30px;
+      margin-bottom: 30px; }
+      #about .headline #opening-line .bold {
+        font-weight: bold; }
+  #about h1 {
+    font-family: helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 2.5em;
+    text-align: center;
+    letter-spacing: 3px;
+    font-variant: small-caps;
+    padding: 50px 0 15px 0; }
+  #about h3 {
+    font-size: 1.5em;
+    width: 1024px;
+    max-width: 85vw;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin: 30px 0 30px 0px;
+    padding: 5px; }
+  #about .my-intro {
+    width: 1024px;
+    max-width: 85vw;
+    min-height: 305px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: center;
+    justify-content: center;
+    /*flex-wrap: wrap;*/
+    margin: 35px 0px 50px 0px;
+    transition: all 500ms ease-in-out; }
+    #about .my-intro.mobile {
+      -ms-flex-direction: column;
+      flex-direction: column;
+      min-height: 0; }
+      #about .my-intro.mobile p {
+        margin-top: 50px; }
+      #about .my-intro.mobile div {
+        -ms-flex: 1 1 200px;
+        flex: 1 1 200px; }
+    #about .my-intro:hover {
+      background-color: #fff;
+      transition: all 500ms ease-in-out; }
+      #about .my-intro:hover img:nth-child(1) {
+        opacity: 0;
+        filter: alpha(opacity=0);
+        transition: all 500ms ease-in-out; }
+    #about .my-intro .pic-container {
+      position: relative;
+      width: 100%;
+      -ms-flex: 0 0 275px;
+      flex: 0 0 275px;
+      margin: 15px; }
+    #about .my-intro img {
+      position: absolute;
+      width: 100%; }
+    #about .my-intro img:nth-child(1) {
+      z-index: 2;
+      opacity: 1;
+      filter: alpha(opacity=100);
+      transition: all 500ms ease-in-out; }
+    #about .my-intro img:nth-child(2) {
+      z-index: 1; }
+    #about .my-intro div {
+      -ms-flex: 1 1 500px;
+      flex: 1 1 500px;
+      margin: 15px; }
+      #about .my-intro div h3 {
+        font-size: 1.5em;
+        color: #333;
+        font-weight: 100;
+        letter-spacing: 1px; }
+      #about .my-intro div p {
+        font-family: garamond, serif;
+        font-size: 20px;
+        line-height: 26px;
+        color: #555;
+        font-weight: 100; }
+  #about .me-on-team {
+    margin: 30px 0 30px 0; }
+    #about .me-on-team h3 {
+      text-align: center; }
+    #about .me-on-team .flex-cont {
+      width: 1024px;
+      max-width: 85vw;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      #about .me-on-team .flex-cont h2 {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        color: white;
+        letter-spacing: 3px;
+        font-weight: 100;
+        font-variant: small-caps;
+        font-size: 40px;
+        padding: 5px;
+        line-height: 240px;
+        transition: all 500ms ease; }
+        #about .me-on-team .flex-cont h2.loaded {
+          opacity: 0;
+          filter: alpha(opacity=0);
+          transition: all 500ms ease; }
+      #about .me-on-team .flex-cont .box1 {
+        background: url("../../images/typo.jpg") no-repeat center center; }
+      #about .me-on-team .flex-cont .box2 {
+        background: url("../../images/photo.jpg") no-repeat center center; }
+      #about .me-on-team .flex-cont .box3 {
+        background: url("../../images/road.jpg") no-repeat center center; }
+      #about .me-on-team .flex-cont .box4 {
+        background: url("../../images/love.jpg") no-repeat center center; }
+      #about .me-on-team .flex-cont .box5 {
+        background: url("../../images/social.jpg") no-repeat center center; }
+  #about .box1, #about .box2, #about .box3, #about .box4, #about .box5 {
+    -ms-flex: 1;
+    flex: 1;
+    position: relative;
+    height: 300px;
+    transition: all 500ms ease-in-out;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    margin: 20px 5px 60px 5px;
+    text-align: center;
+    background-size: cover; }
+    #about .box1 span, #about .box2 span, #about .box3 span, #about .box4 span, #about .box5 span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: transparent;
+      transition: all 500ms ease-in-out; }
+    #about .box1:hover, #about .box2:hover, #about .box3:hover, #about .box4:hover, #about .box5:hover {
+      -ms-flex: 2;
+      flex: 2;
+      transition: all 500ms ease-in-out;
+      opacity: 1;
+      filter: alpha(opacity=100);
+      background-color: #333; }
+      #about .box1:hover span, #about .box2:hover span, #about .box3:hover span, #about .box4:hover span, #about .box5:hover span {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        background: rgba(0, 0, 0, 0.6);
+        transition: all 500ms ease-in-out; }
+    #about .box1 .inner-box-1, #about .box1 .inner-box-2, #about .box1 .inner-box-3, #about .box1 .inner-box-4, #about .box1 .inner-box-5, #about .box2 .inner-box-1, #about .box2 .inner-box-2, #about .box2 .inner-box-3, #about .box2 .inner-box-4, #about .box2 .inner-box-5, #about .box3 .inner-box-1, #about .box3 .inner-box-2, #about .box3 .inner-box-3, #about .box3 .inner-box-4, #about .box3 .inner-box-5, #about .box4 .inner-box-1, #about .box4 .inner-box-2, #about .box4 .inner-box-3, #about .box4 .inner-box-4, #about .box4 .inner-box-5, #about .box5 .inner-box-1, #about .box5 .inner-box-2, #about .box5 .inner-box-3, #about .box5 .inner-box-4, #about .box5 .inner-box-5 {
+      position: relative;
+      opacity: 1;
+      filter: alpha(opacity=100); }
+    #about .box1 .popup1, #about .box1 .popup2, #about .box1 .popup3, #about .box1 .popup4, #about .box1 .popup5, #about .box2 .popup1, #about .box2 .popup2, #about .box2 .popup3, #about .box2 .popup4, #about .box2 .popup5, #about .box3 .popup1, #about .box3 .popup2, #about .box3 .popup3, #about .box3 .popup4, #about .box3 .popup5, #about .box4 .popup1, #about .box4 .popup2, #about .box4 .popup3, #about .box4 .popup4, #about .box4 .popup5, #about .box5 .popup1, #about .box5 .popup2, #about .box5 .popup3, #about .box5 .popup4, #about .box5 .popup5 {
+      position: absolute;
+      top: 10%;
+      padding: 0 20px 0 20px;
+      color: white;
+      opacity: 0;
+      filter: alpha(opacity=0);
+      transform: translateY(-150px);
+      transition: all 500ms ease; }
+      #about .box1 .popup1.loaded, #about .box1 .popup2.loaded, #about .box1 .popup3.loaded, #about .box1 .popup4.loaded, #about .box1 .popup5.loaded, #about .box2 .popup1.loaded, #about .box2 .popup2.loaded, #about .box2 .popup3.loaded, #about .box2 .popup4.loaded, #about .box2 .popup5.loaded, #about .box3 .popup1.loaded, #about .box3 .popup2.loaded, #about .box3 .popup3.loaded, #about .box3 .popup4.loaded, #about .box3 .popup5.loaded, #about .box4 .popup1.loaded, #about .box4 .popup2.loaded, #about .box4 .popup3.loaded, #about .box4 .popup4.loaded, #about .box4 .popup5.loaded, #about .box5 .popup1.loaded, #about .box5 .popup2.loaded, #about .box5 .popup3.loaded, #about .box5 .popup4.loaded, #about .box5 .popup5.loaded {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        transform: translateY(0px);
+        transition: all 500ms 300ms ease; }
+      #about .box1 .popup1 p, #about .box1 .popup2 p, #about .box1 .popup3 p, #about .box1 .popup4 p, #about .box1 .popup5 p, #about .box2 .popup1 p, #about .box2 .popup2 p, #about .box2 .popup3 p, #about .box2 .popup4 p, #about .box2 .popup5 p, #about .box3 .popup1 p, #about .box3 .popup2 p, #about .box3 .popup3 p, #about .box3 .popup4 p, #about .box3 .popup5 p, #about .box4 .popup1 p, #about .box4 .popup2 p, #about .box4 .popup3 p, #about .box4 .popup4 p, #about .box4 .popup5 p, #about .box5 .popup1 p, #about .box5 .popup2 p, #about .box5 .popup3 p, #about .box5 .popup4 p, #about .box5 .popup5 p {
+        font-family: garamond, serif;
+        line-height: 26px;
+        opacity: 1;
+        filter: alpha(opacity=100); }
+      #about .box1 .popup1 h4, #about .box1 .popup2 h4, #about .box1 .popup3 h4, #about .box1 .popup4 h4, #about .box1 .popup5 h4, #about .box2 .popup1 h4, #about .box2 .popup2 h4, #about .box2 .popup3 h4, #about .box2 .popup4 h4, #about .box2 .popup5 h4, #about .box3 .popup1 h4, #about .box3 .popup2 h4, #about .box3 .popup3 h4, #about .box3 .popup4 h4, #about .box3 .popup5 h4, #about .box4 .popup1 h4, #about .box4 .popup2 h4, #about .box4 .popup3 h4, #about .box4 .popup4 h4, #about .box4 .popup5 h4, #about .box5 .popup1 h4, #about .box5 .popup2 h4, #about .box5 .popup3 h4, #about .box5 .popup4 h4, #about .box5 .popup5 h4 {
+        font-family: helvetica, sans-serif;
+        font-weight: 100;
+        font-size: 1.5em;
+        font-variant: small-caps;
+        letter-spacing: 2px;
+        margin-bottom: 0;
+        color: white; }
+      #about .box1 .popup1 .box1-line, #about .box1 .popup1 .box2-line, #about .box1 .popup1 .box3-line, #about .box1 .popup1 .box4-line, #about .box1 .popup1 .box5-line, #about .box1 .popup2 .box1-line, #about .box1 .popup2 .box2-line, #about .box1 .popup2 .box3-line, #about .box1 .popup2 .box4-line, #about .box1 .popup2 .box5-line, #about .box1 .popup3 .box1-line, #about .box1 .popup3 .box2-line, #about .box1 .popup3 .box3-line, #about .box1 .popup3 .box4-line, #about .box1 .popup3 .box5-line, #about .box1 .popup4 .box1-line, #about .box1 .popup4 .box2-line, #about .box1 .popup4 .box3-line, #about .box1 .popup4 .box4-line, #about .box1 .popup4 .box5-line, #about .box1 .popup5 .box1-line, #about .box1 .popup5 .box2-line, #about .box1 .popup5 .box3-line, #about .box1 .popup5 .box4-line, #about .box1 .popup5 .box5-line, #about .box2 .popup1 .box1-line, #about .box2 .popup1 .box2-line, #about .box2 .popup1 .box3-line, #about .box2 .popup1 .box4-line, #about .box2 .popup1 .box5-line, #about .box2 .popup2 .box1-line, #about .box2 .popup2 .box2-line, #about .box2 .popup2 .box3-line, #about .box2 .popup2 .box4-line, #about .box2 .popup2 .box5-line, #about .box2 .popup3 .box1-line, #about .box2 .popup3 .box2-line, #about .box2 .popup3 .box3-line, #about .box2 .popup3 .box4-line, #about .box2 .popup3 .box5-line, #about .box2 .popup4 .box1-line, #about .box2 .popup4 .box2-line, #about .box2 .popup4 .box3-line, #about .box2 .popup4 .box4-line, #about .box2 .popup4 .box5-line, #about .box2 .popup5 .box1-line, #about .box2 .popup5 .box2-line, #about .box2 .popup5 .box3-line, #about .box2 .popup5 .box4-line, #about .box2 .popup5 .box5-line, #about .box3 .popup1 .box1-line, #about .box3 .popup1 .box2-line, #about .box3 .popup1 .box3-line, #about .box3 .popup1 .box4-line, #about .box3 .popup1 .box5-line, #about .box3 .popup2 .box1-line, #about .box3 .popup2 .box2-line, #about .box3 .popup2 .box3-line, #about .box3 .popup2 .box4-line, #about .box3 .popup2 .box5-line, #about .box3 .popup3 .box1-line, #about .box3 .popup3 .box2-line, #about .box3 .popup3 .box3-line, #about .box3 .popup3 .box4-line, #about .box3 .popup3 .box5-line, #about .box3 .popup4 .box1-line, #about .box3 .popup4 .box2-line, #about .box3 .popup4 .box3-line, #about .box3 .popup4 .box4-line, #about .box3 .popup4 .box5-line, #about .box3 .popup5 .box1-line, #about .box3 .popup5 .box2-line, #about .box3 .popup5 .box3-line, #about .box3 .popup5 .box4-line, #about .box3 .popup5 .box5-line, #about .box4 .popup1 .box1-line, #about .box4 .popup1 .box2-line, #about .box4 .popup1 .box3-line, #about .box4 .popup1 .box4-line, #about .box4 .popup1 .box5-line, #about .box4 .popup2 .box1-line, #about .box4 .popup2 .box2-line, #about .box4 .popup2 .box3-line, #about .box4 .popup2 .box4-line, #about .box4 .popup2 .box5-line, #about .box4 .popup3 .box1-line, #about .box4 .popup3 .box2-line, #about .box4 .popup3 .box3-line, #about .box4 .popup3 .box4-line, #about .box4 .popup3 .box5-line, #about .box4 .popup4 .box1-line, #about .box4 .popup4 .box2-line, #about .box4 .popup4 .box3-line, #about .box4 .popup4 .box4-line, #about .box4 .popup4 .box5-line, #about .box4 .popup5 .box1-line, #about .box4 .popup5 .box2-line, #about .box4 .popup5 .box3-line, #about .box4 .popup5 .box4-line, #about .box4 .popup5 .box5-line, #about .box5 .popup1 .box1-line, #about .box5 .popup1 .box2-line, #about .box5 .popup1 .box3-line, #about .box5 .popup1 .box4-line, #about .box5 .popup1 .box5-line, #about .box5 .popup2 .box1-line, #about .box5 .popup2 .box2-line, #about .box5 .popup2 .box3-line, #about .box5 .popup2 .box4-line, #about .box5 .popup2 .box5-line, #about .box5 .popup3 .box1-line, #about .box5 .popup3 .box2-line, #about .box5 .popup3 .box3-line, #about .box5 .popup3 .box4-line, #about .box5 .popup3 .box5-line, #about .box5 .popup4 .box1-line, #about .box5 .popup4 .box2-line, #about .box5 .popup4 .box3-line, #about .box5 .popup4 .box4-line, #about .box5 .popup4 .box5-line, #about .box5 .popup5 .box1-line, #about .box5 .popup5 .box2-line, #about .box5 .popup5 .box3-line, #about .box5 .popup5 .box4-line, #about .box5 .popup5 .box5-line {
+        width: 0;
+        transition: all 500ms 300ms ease; }
+        #about .box1 .popup1 .box1-line.loaded, #about .box1 .popup1 .box2-line.loaded, #about .box1 .popup1 .box3-line.loaded, #about .box1 .popup1 .box4-line.loaded, #about .box1 .popup1 .box5-line.loaded, #about .box1 .popup2 .box1-line.loaded, #about .box1 .popup2 .box2-line.loaded, #about .box1 .popup2 .box3-line.loaded, #about .box1 .popup2 .box4-line.loaded, #about .box1 .popup2 .box5-line.loaded, #about .box1 .popup3 .box1-line.loaded, #about .box1 .popup3 .box2-line.loaded, #about .box1 .popup3 .box3-line.loaded, #about .box1 .popup3 .box4-line.loaded, #about .box1 .popup3 .box5-line.loaded, #about .box1 .popup4 .box1-line.loaded, #about .box1 .popup4 .box2-line.loaded, #about .box1 .popup4 .box3-line.loaded, #about .box1 .popup4 .box4-line.loaded, #about .box1 .popup4 .box5-line.loaded, #about .box1 .popup5 .box1-line.loaded, #about .box1 .popup5 .box2-line.loaded, #about .box1 .popup5 .box3-line.loaded, #about .box1 .popup5 .box4-line.loaded, #about .box1 .popup5 .box5-line.loaded, #about .box2 .popup1 .box1-line.loaded, #about .box2 .popup1 .box2-line.loaded, #about .box2 .popup1 .box3-line.loaded, #about .box2 .popup1 .box4-line.loaded, #about .box2 .popup1 .box5-line.loaded, #about .box2 .popup2 .box1-line.loaded, #about .box2 .popup2 .box2-line.loaded, #about .box2 .popup2 .box3-line.loaded, #about .box2 .popup2 .box4-line.loaded, #about .box2 .popup2 .box5-line.loaded, #about .box2 .popup3 .box1-line.loaded, #about .box2 .popup3 .box2-line.loaded, #about .box2 .popup3 .box3-line.loaded, #about .box2 .popup3 .box4-line.loaded, #about .box2 .popup3 .box5-line.loaded, #about .box2 .popup4 .box1-line.loaded, #about .box2 .popup4 .box2-line.loaded, #about .box2 .popup4 .box3-line.loaded, #about .box2 .popup4 .box4-line.loaded, #about .box2 .popup4 .box5-line.loaded, #about .box2 .popup5 .box1-line.loaded, #about .box2 .popup5 .box2-line.loaded, #about .box2 .popup5 .box3-line.loaded, #about .box2 .popup5 .box4-line.loaded, #about .box2 .popup5 .box5-line.loaded, #about .box3 .popup1 .box1-line.loaded, #about .box3 .popup1 .box2-line.loaded, #about .box3 .popup1 .box3-line.loaded, #about .box3 .popup1 .box4-line.loaded, #about .box3 .popup1 .box5-line.loaded, #about .box3 .popup2 .box1-line.loaded, #about .box3 .popup2 .box2-line.loaded, #about .box3 .popup2 .box3-line.loaded, #about .box3 .popup2 .box4-line.loaded, #about .box3 .popup2 .box5-line.loaded, #about .box3 .popup3 .box1-line.loaded, #about .box3 .popup3 .box2-line.loaded, #about .box3 .popup3 .box3-line.loaded, #about .box3 .popup3 .box4-line.loaded, #about .box3 .popup3 .box5-line.loaded, #about .box3 .popup4 .box1-line.loaded, #about .box3 .popup4 .box2-line.loaded, #about .box3 .popup4 .box3-line.loaded, #about .box3 .popup4 .box4-line.loaded, #about .box3 .popup4 .box5-line.loaded, #about .box3 .popup5 .box1-line.loaded, #about .box3 .popup5 .box2-line.loaded, #about .box3 .popup5 .box3-line.loaded, #about .box3 .popup5 .box4-line.loaded, #about .box3 .popup5 .box5-line.loaded, #about .box4 .popup1 .box1-line.loaded, #about .box4 .popup1 .box2-line.loaded, #about .box4 .popup1 .box3-line.loaded, #about .box4 .popup1 .box4-line.loaded, #about .box4 .popup1 .box5-line.loaded, #about .box4 .popup2 .box1-line.loaded, #about .box4 .popup2 .box2-line.loaded, #about .box4 .popup2 .box3-line.loaded, #about .box4 .popup2 .box4-line.loaded, #about .box4 .popup2 .box5-line.loaded, #about .box4 .popup3 .box1-line.loaded, #about .box4 .popup3 .box2-line.loaded, #about .box4 .popup3 .box3-line.loaded, #about .box4 .popup3 .box4-line.loaded, #about .box4 .popup3 .box5-line.loaded, #about .box4 .popup4 .box1-line.loaded, #about .box4 .popup4 .box2-line.loaded, #about .box4 .popup4 .box3-line.loaded, #about .box4 .popup4 .box4-line.loaded, #about .box4 .popup4 .box5-line.loaded, #about .box4 .popup5 .box1-line.loaded, #about .box4 .popup5 .box2-line.loaded, #about .box4 .popup5 .box3-line.loaded, #about .box4 .popup5 .box4-line.loaded, #about .box4 .popup5 .box5-line.loaded, #about .box5 .popup1 .box1-line.loaded, #about .box5 .popup1 .box2-line.loaded, #about .box5 .popup1 .box3-line.loaded, #about .box5 .popup1 .box4-line.loaded, #about .box5 .popup1 .box5-line.loaded, #about .box5 .popup2 .box1-line.loaded, #about .box5 .popup2 .box2-line.loaded, #about .box5 .popup2 .box3-line.loaded, #about .box5 .popup2 .box4-line.loaded, #about .box5 .popup2 .box5-line.loaded, #about .box5 .popup3 .box1-line.loaded, #about .box5 .popup3 .box2-line.loaded, #about .box5 .popup3 .box3-line.loaded, #about .box5 .popup3 .box4-line.loaded, #about .box5 .popup3 .box5-line.loaded, #about .box5 .popup4 .box1-line.loaded, #about .box5 .popup4 .box2-line.loaded, #about .box5 .popup4 .box3-line.loaded, #about .box5 .popup4 .box4-line.loaded, #about .box5 .popup4 .box5-line.loaded, #about .box5 .popup5 .box1-line.loaded, #about .box5 .popup5 .box2-line.loaded, #about .box5 .popup5 .box3-line.loaded, #about .box5 .popup5 .box4-line.loaded, #about .box5 .popup5 .box5-line.loaded {
+          width: 60%;
+          transition: all 500ms 500ms ease; }
