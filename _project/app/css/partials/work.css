@@ -13,27 +13,24 @@
   align-items: center;
   margin: auto;
   color: #333; }
-
-#work h1 {
-  font-family: helvetica, sans-serif;
-  font-weight: 100;
-  font-size: 2.5em;
-  text-align: center;
-  letter-spacing: 3px;
-  font-variant: small-caps;
-  padding: 50px 0 15px 0; }
-
-#work h2 {
-  font-family: helvetica, sans-serif;
-  font-weight: 100;
-  font-size: 2em;
-  text-align: center;
-  letter-spacing: 2px;
-  font-variant: small-caps;
-  padding: 50px 0 15px 0; }
-
-#work hr {
-  width: 40%; }
+  #work h1 {
+    font-family: helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 2.5em;
+    text-align: center;
+    letter-spacing: 3px;
+    font-variant: small-caps;
+    padding: 50px 0 15px 0; }
+  #work h2 {
+    font-family: helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 2em;
+    text-align: center;
+    letter-spacing: 2px;
+    font-variant: small-caps;
+    padding: 50px 0 15px 0; }
+  #work hr {
+    width: 40%; }
 
 .work-row {
   width: 1024px;
@@ -46,101 +43,90 @@
   -webkit-box-pack: center;
   justify-content: center;
   margin-bottom: 40px; }
-
-.work-item-1, .work-item-2, .work-item-3, .work-item-4, .work-item-5, .work-item-6 {
-  -webkit-box-flex: 1;
-  flex: 1;
-  width: 300px;
-  height: 300px;
-  background-color: #333;
-  margin: 10px;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-  vertical-align: middle;
-  padding: 20px;
-  -webkit-transition: all 200ms ease;
-  transition: all 200ms ease; }
-
-.work-item-1:hover, .work-item-2:hover, .work-item-3:hover, .work-item-4:hover, .work-item-5:hover, .work-item-6:hover {
-  background-color: #E0E0E0;
-  -webkit-transition: all 200ms ease;
-  transition: all 200ms ease; }
-
-.work-item-1-text, .work-item-2-text, .work-item-3-text, .work-item-4-text, .work-item-5-text, .work-item-6-text {
-  position: relative;
-  top: -160px;
-  color: #333;
-  font-family: garamond, serif;
-  font-size: 16px;
-  /*border: 2px dashed #333;*/
-  padding: 5px 10px 5px 10px;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  line-height: 22px;
-  -webkit-transform: translateY(-100px);
-  transform: translateY(-100px);
-  -webkit-transition: all 500ms ease;
-  transition: all 500ms ease; }
-
-.work-item-1-butt, .work-item-2-butt, .work-item-3-butt, .work-item-4-butt, .work-item-5-butt, .work-item-6-butt {
-  font-family: helvetica, sans-serif;
-  letter-spacing: 1px;
-  border-radius: 0px;
-  border: 2px solid #333;
-  margin-top: 5px;
-  padding: 5px 10px 5px 10px;
-  background-color: transparent;
-  -webkit-transition: all 500ms ease;
-  transition: all 500ms ease;
-  cursor: pointer; }
-
-.work-item-1-butt:hover, .work-item-2-butt:hover, .work-item-3-butt:hover, .work-item-4-butt:hover, .work-item-5-butt:hover, .work-item-6-butt:hover {
-  background-color: #333;
-  -webkit-transition: all 500ms ease;
-  transition: all 500ms ease;
-  color: white; }
-
-.work-item-1-text.loaded, .work-item-2-text.loaded, .work-item-3-text.loaded, .work-item-4-text.loaded, .work-item-5-text.loaded, .work-item-6-text.loaded {
-  opacity: 1;
-  filter: alpha(opacity=100);
-  -webkit-transform: translateY(-20px);
-  transform: translateY(-20px);
-  -webkit-transition: all 500ms ease;
-  transition: all 500ms ease; }
-
-.work-row a, .work-row a:active {
-  text-decoration: none;
-  color: #333;
-  vertical-align: middle; }
-
-.work-item-1-logo, .work-item-2-logo, .work-item-3-logo, .work-item-4-logo, .work-item-5-logo, .work-item-6-logo {
-  position: relative;
-  top: 210px;
-  font-size: 2.5em;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  -webkit-transform: scale(0);
-  transform: scale(0);
-  -webkit-transition: all 500ms ease;
-  transition: all 500ms ease; }
-
-.work-item-1-logo.loaded, .work-item-2-logo.loaded, .work-item-3-logo.loaded, .work-item-4-logo.loaded, .work-item-5-logo.loaded, .work-item-6-logo.loaded {
-  opacity: 1;
-  filter: alpha(opacity=100);
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: all 500ms ease;
-  transition: all 500ms ease; }
-
-.work-item-1-head, .work-item-2-head, .work-item-3-head, .work-item-4-head, .work-item-5-head, .work-item-6-head {
-  position: relative;
-  top: -20px;
-  -webkit-transition: all 500ms ease;
-  transition: all 500ms ease; }
-
-.work-item-1-head.loaded, .work-item-2-head.loaded, .work-item-3-head.loaded, .work-item-4-head.loaded, .work-item-5-head.loaded, .work-item-6-head.loaded {
-  opacity: 0;
-  filter: alpha(opacity=0);
-  -webkit-transition: all 500ms ease;
-  transition: all 500ms ease; }
+  .work-row a, .work-row a:active {
+    text-decoration: none;
+    color: #333;
+    vertical-align: middle; }
+  .work-row .work-item-1, .work-row .work-item-2, .work-row .work-item-3, .work-row .work-item-4, .work-row .work-item-5, .work-row .work-item-6 {
+    -webkit-box-flex: 1;
+    flex: 1;
+    width: 300px;
+    height: 300px;
+    background-color: #333;
+    margin: 10px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    padding: 20px;
+    -webkit-transition: all 200ms ease;
+    transition: all 200ms ease; }
+    .work-row .work-item-1:hover, .work-row .work-item-2:hover, .work-row .work-item-3:hover, .work-row .work-item-4:hover, .work-row .work-item-5:hover, .work-row .work-item-6:hover {
+      background-color: #E0E0E0;
+      -webkit-transition: all 200ms ease;
+      transition: all 200ms ease; }
+    .work-row .work-item-1 .work-item-1-text, .work-row .work-item-1 .work-item-2-text, .work-row .work-item-1 .work-item-3-text, .work-row .work-item-1 .work-item-4-text, .work-row .work-item-1 .work-item-5-text, .work-row .work-item-1 .work-item-6-text, .work-row .work-item-2 .work-item-1-text, .work-row .work-item-2 .work-item-2-text, .work-row .work-item-2 .work-item-3-text, .work-row .work-item-2 .work-item-4-text, .work-row .work-item-2 .work-item-5-text, .work-row .work-item-2 .work-item-6-text, .work-row .work-item-3 .work-item-1-text, .work-row .work-item-3 .work-item-2-text, .work-row .work-item-3 .work-item-3-text, .work-row .work-item-3 .work-item-4-text, .work-row .work-item-3 .work-item-5-text, .work-row .work-item-3 .work-item-6-text, .work-row .work-item-4 .work-item-1-text, .work-row .work-item-4 .work-item-2-text, .work-row .work-item-4 .work-item-3-text, .work-row .work-item-4 .work-item-4-text, .work-row .work-item-4 .work-item-5-text, .work-row .work-item-4 .work-item-6-text, .work-row .work-item-5 .work-item-1-text, .work-row .work-item-5 .work-item-2-text, .work-row .work-item-5 .work-item-3-text, .work-row .work-item-5 .work-item-4-text, .work-row .work-item-5 .work-item-5-text, .work-row .work-item-5 .work-item-6-text, .work-row .work-item-6 .work-item-1-text, .work-row .work-item-6 .work-item-2-text, .work-row .work-item-6 .work-item-3-text, .work-row .work-item-6 .work-item-4-text, .work-row .work-item-6 .work-item-5-text, .work-row .work-item-6 .work-item-6-text {
+      position: relative;
+      top: -160px;
+      color: #333;
+      font-family: garamond, serif;
+      font-size: 16px;
+      /*border: 2px dashed #333;*/
+      padding: 5px 10px 5px 10px;
+      opacity: 0;
+      filter: alpha(opacity=0);
+      line-height: 22px;
+      -webkit-transform: translateY(-100px);
+      transform: translateY(-100px);
+      -webkit-transition: all 500ms ease;
+      transition: all 500ms ease; }
+      .work-row .work-item-1 .work-item-1-text.loaded, .work-row .work-item-1 .work-item-2-text.loaded, .work-row .work-item-1 .work-item-3-text.loaded, .work-row .work-item-1 .work-item-4-text.loaded, .work-row .work-item-1 .work-item-5-text.loaded, .work-row .work-item-1 .work-item-6-text.loaded, .work-row .work-item-2 .work-item-1-text.loaded, .work-row .work-item-2 .work-item-2-text.loaded, .work-row .work-item-2 .work-item-3-text.loaded, .work-row .work-item-2 .work-item-4-text.loaded, .work-row .work-item-2 .work-item-5-text.loaded, .work-row .work-item-2 .work-item-6-text.loaded, .work-row .work-item-3 .work-item-1-text.loaded, .work-row .work-item-3 .work-item-2-text.loaded, .work-row .work-item-3 .work-item-3-text.loaded, .work-row .work-item-3 .work-item-4-text.loaded, .work-row .work-item-3 .work-item-5-text.loaded, .work-row .work-item-3 .work-item-6-text.loaded, .work-row .work-item-4 .work-item-1-text.loaded, .work-row .work-item-4 .work-item-2-text.loaded, .work-row .work-item-4 .work-item-3-text.loaded, .work-row .work-item-4 .work-item-4-text.loaded, .work-row .work-item-4 .work-item-5-text.loaded, .work-row .work-item-4 .work-item-6-text.loaded, .work-row .work-item-5 .work-item-1-text.loaded, .work-row .work-item-5 .work-item-2-text.loaded, .work-row .work-item-5 .work-item-3-text.loaded, .work-row .work-item-5 .work-item-4-text.loaded, .work-row .work-item-5 .work-item-5-text.loaded, .work-row .work-item-5 .work-item-6-text.loaded, .work-row .work-item-6 .work-item-1-text.loaded, .work-row .work-item-6 .work-item-2-text.loaded, .work-row .work-item-6 .work-item-3-text.loaded, .work-row .work-item-6 .work-item-4-text.loaded, .work-row .work-item-6 .work-item-5-text.loaded, .work-row .work-item-6 .work-item-6-text.loaded {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+        -webkit-transition: all 500ms ease;
+        transition: all 500ms ease; }
+    .work-row .work-item-1 .work-item-1-butt, .work-row .work-item-1 .work-item-2-butt, .work-row .work-item-1 .work-item-3-butt, .work-row .work-item-1 .work-item-4-butt, .work-row .work-item-1 .work-item-5-butt, .work-row .work-item-1 .work-item-6-butt, .work-row .work-item-2 .work-item-1-butt, .work-row .work-item-2 .work-item-2-butt, .work-row .work-item-2 .work-item-3-butt, .work-row .work-item-2 .work-item-4-butt, .work-row .work-item-2 .work-item-5-butt, .work-row .work-item-2 .work-item-6-butt, .work-row .work-item-3 .work-item-1-butt, .work-row .work-item-3 .work-item-2-butt, .work-row .work-item-3 .work-item-3-butt, .work-row .work-item-3 .work-item-4-butt, .work-row .work-item-3 .work-item-5-butt, .work-row .work-item-3 .work-item-6-butt, .work-row .work-item-4 .work-item-1-butt, .work-row .work-item-4 .work-item-2-butt, .work-row .work-item-4 .work-item-3-butt, .work-row .work-item-4 .work-item-4-butt, .work-row .work-item-4 .work-item-5-butt, .work-row .work-item-4 .work-item-6-butt, .work-row .work-item-5 .work-item-1-butt, .work-row .work-item-5 .work-item-2-butt, .work-row .work-item-5 .work-item-3-butt, .work-row .work-item-5 .work-item-4-butt, .work-row .work-item-5 .work-item-5-butt, .work-row .work-item-5 .work-item-6-butt, .work-row .work-item-6 .work-item-1-butt, .work-row .work-item-6 .work-item-2-butt, .work-row .work-item-6 .work-item-3-butt, .work-row .work-item-6 .work-item-4-butt, .work-row .work-item-6 .work-item-5-butt, .work-row .work-item-6 .work-item-6-butt {
+      font-family: helvetica, sans-serif;
+      letter-spacing: 1px;
+      border-radius: 0px;
+      border: 2px solid #333;
+      margin-top: 5px;
+      padding: 5px 10px 5px 10px;
+      background-color: transparent;
+      -webkit-transition: all 500ms ease;
+      transition: all 500ms ease;
+      cursor: pointer; }
+      .work-row .work-item-1 .work-item-1-butt:hover, .work-row .work-item-1 .work-item-2-butt:hover, .work-row .work-item-1 .work-item-3-butt:hover, .work-row .work-item-1 .work-item-4-butt:hover, .work-row .work-item-1 .work-item-5-butt:hover, .work-row .work-item-1 .work-item-6-butt:hover, .work-row .work-item-2 .work-item-1-butt:hover, .work-row .work-item-2 .work-item-2-butt:hover, .work-row .work-item-2 .work-item-3-butt:hover, .work-row .work-item-2 .work-item-4-butt:hover, .work-row .work-item-2 .work-item-5-butt:hover, .work-row .work-item-2 .work-item-6-butt:hover, .work-row .work-item-3 .work-item-1-butt:hover, .work-row .work-item-3 .work-item-2-butt:hover, .work-row .work-item-3 .work-item-3-butt:hover, .work-row .work-item-3 .work-item-4-butt:hover, .work-row .work-item-3 .work-item-5-butt:hover, .work-row .work-item-3 .work-item-6-butt:hover, .work-row .work-item-4 .work-item-1-butt:hover, .work-row .work-item-4 .work-item-2-butt:hover, .work-row .work-item-4 .work-item-3-butt:hover, .work-row .work-item-4 .work-item-4-butt:hover, .work-row .work-item-4 .work-item-5-butt:hover, .work-row .work-item-4 .work-item-6-butt:hover, .work-row .work-item-5 .work-item-1-butt:hover, .work-row .work-item-5 .work-item-2-butt:hover, .work-row .work-item-5 .work-item-3-butt:hover, .work-row .work-item-5 .work-item-4-butt:hover, .work-row .work-item-5 .work-item-5-butt:hover, .work-row .work-item-5 .work-item-6-butt:hover, .work-row .work-item-6 .work-item-1-butt:hover, .work-row .work-item-6 .work-item-2-butt:hover, .work-row .work-item-6 .work-item-3-butt:hover, .work-row .work-item-6 .work-item-4-butt:hover, .work-row .work-item-6 .work-item-5-butt:hover, .work-row .work-item-6 .work-item-6-butt:hover {
+        background-color: #333;
+        -webkit-transition: all 500ms ease;
+        transition: all 500ms ease;
+        color: white; }
+    .work-row .work-item-1 .work-item-1-logo, .work-row .work-item-1 .work-item-2-logo, .work-row .work-item-1 .work-item-3-logo, .work-row .work-item-1 .work-item-4-logo, .work-row .work-item-1 .work-item-5-logo, .work-row .work-item-1 .work-item-6-logo, .work-row .work-item-2 .work-item-1-logo, .work-row .work-item-2 .work-item-2-logo, .work-row .work-item-2 .work-item-3-logo, .work-row .work-item-2 .work-item-4-logo, .work-row .work-item-2 .work-item-5-logo, .work-row .work-item-2 .work-item-6-logo, .work-row .work-item-3 .work-item-1-logo, .work-row .work-item-3 .work-item-2-logo, .work-row .work-item-3 .work-item-3-logo, .work-row .work-item-3 .work-item-4-logo, .work-row .work-item-3 .work-item-5-logo, .work-row .work-item-3 .work-item-6-logo, .work-row .work-item-4 .work-item-1-logo, .work-row .work-item-4 .work-item-2-logo, .work-row .work-item-4 .work-item-3-logo, .work-row .work-item-4 .work-item-4-logo, .work-row .work-item-4 .work-item-5-logo, .work-row .work-item-4 .work-item-6-logo, .work-row .work-item-5 .work-item-1-logo, .work-row .work-item-5 .work-item-2-logo, .work-row .work-item-5 .work-item-3-logo, .work-row .work-item-5 .work-item-4-logo, .work-row .work-item-5 .work-item-5-logo, .work-row .work-item-5 .work-item-6-logo, .work-row .work-item-6 .work-item-1-logo, .work-row .work-item-6 .work-item-2-logo, .work-row .work-item-6 .work-item-3-logo, .work-row .work-item-6 .work-item-4-logo, .work-row .work-item-6 .work-item-5-logo, .work-row .work-item-6 .work-item-6-logo {
+      position: relative;
+      top: 210px;
+      font-size: 2.5em;
+      opacity: 0;
+      filter: alpha(opacity=0);
+      -webkit-transform: scale(0);
+      transform: scale(0);
+      -webkit-transition: all 500ms ease;
+      transition: all 500ms ease; }
+      .work-row .work-item-1 .work-item-1-logo.loaded, .work-row .work-item-1 .work-item-2-logo.loaded, .work-row .work-item-1 .work-item-3-logo.loaded, .work-row .work-item-1 .work-item-4-logo.loaded, .work-row .work-item-1 .work-item-5-logo.loaded, .work-row .work-item-1 .work-item-6-logo.loaded, .work-row .work-item-2 .work-item-1-logo.loaded, .work-row .work-item-2 .work-item-2-logo.loaded, .work-row .work-item-2 .work-item-3-logo.loaded, .work-row .work-item-2 .work-item-4-logo.loaded, .work-row .work-item-2 .work-item-5-logo.loaded, .work-row .work-item-2 .work-item-6-logo.loaded, .work-row .work-item-3 .work-item-1-logo.loaded, .work-row .work-item-3 .work-item-2-logo.loaded, .work-row .work-item-3 .work-item-3-logo.loaded, .work-row .work-item-3 .work-item-4-logo.loaded, .work-row .work-item-3 .work-item-5-logo.loaded, .work-row .work-item-3 .work-item-6-logo.loaded, .work-row .work-item-4 .work-item-1-logo.loaded, .work-row .work-item-4 .work-item-2-logo.loaded, .work-row .work-item-4 .work-item-3-logo.loaded, .work-row .work-item-4 .work-item-4-logo.loaded, .work-row .work-item-4 .work-item-5-logo.loaded, .work-row .work-item-4 .work-item-6-logo.loaded, .work-row .work-item-5 .work-item-1-logo.loaded, .work-row .work-item-5 .work-item-2-logo.loaded, .work-row .work-item-5 .work-item-3-logo.loaded, .work-row .work-item-5 .work-item-4-logo.loaded, .work-row .work-item-5 .work-item-5-logo.loaded, .work-row .work-item-5 .work-item-6-logo.loaded, .work-row .work-item-6 .work-item-1-logo.loaded, .work-row .work-item-6 .work-item-2-logo.loaded, .work-row .work-item-6 .work-item-3-logo.loaded, .work-row .work-item-6 .work-item-4-logo.loaded, .work-row .work-item-6 .work-item-5-logo.loaded, .work-row .work-item-6 .work-item-6-logo.loaded {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: all 500ms ease;
+        transition: all 500ms ease; }
+    .work-row .work-item-1 .work-item-1-head, .work-row .work-item-1 .work-item-2-head, .work-row .work-item-1 .work-item-3-head, .work-row .work-item-1 .work-item-4-head, .work-row .work-item-1 .work-item-5-head, .work-row .work-item-1 .work-item-6-head, .work-row .work-item-2 .work-item-1-head, .work-row .work-item-2 .work-item-2-head, .work-row .work-item-2 .work-item-3-head, .work-row .work-item-2 .work-item-4-head, .work-row .work-item-2 .work-item-5-head, .work-row .work-item-2 .work-item-6-head, .work-row .work-item-3 .work-item-1-head, .work-row .work-item-3 .work-item-2-head, .work-row .work-item-3 .work-item-3-head, .work-row .work-item-3 .work-item-4-head, .work-row .work-item-3 .work-item-5-head, .work-row .work-item-3 .work-item-6-head, .work-row .work-item-4 .work-item-1-head, .work-row .work-item-4 .work-item-2-head, .work-row .work-item-4 .work-item-3-head, .work-row .work-item-4 .work-item-4-head, .work-row .work-item-4 .work-item-5-head, .work-row .work-item-4 .work-item-6-head, .work-row .work-item-5 .work-item-1-head, .work-row .work-item-5 .work-item-2-head, .work-row .work-item-5 .work-item-3-head, .work-row .work-item-5 .work-item-4-head, .work-row .work-item-5 .work-item-5-head, .work-row .work-item-5 .work-item-6-head, .work-row .work-item-6 .work-item-1-head, .work-row .work-item-6 .work-item-2-head, .work-row .work-item-6 .work-item-3-head, .work-row .work-item-6 .work-item-4-head, .work-row .work-item-6 .work-item-5-head, .work-row .work-item-6 .work-item-6-head {
+      position: relative;
+      top: -20px;
+      -webkit-transition: all 500ms ease;
+      transition: all 500ms ease; }
+      .work-row .work-item-1 .work-item-1-head.loaded, .work-row .work-item-1 .work-item-2-head.loaded, .work-row .work-item-1 .work-item-3-head.loaded, .work-row .work-item-1 .work-item-4-head.loaded, .work-row .work-item-1 .work-item-5-head.loaded, .work-row .work-item-1 .work-item-6-head.loaded, .work-row .work-item-2 .work-item-1-head.loaded, .work-row .work-item-2 .work-item-2-head.loaded, .work-row .work-item-2 .work-item-3-head.loaded, .work-row .work-item-2 .work-item-4-head.loaded, .work-row .work-item-2 .work-item-5-head.loaded, .work-row .work-item-2 .work-item-6-head.loaded, .work-row .work-item-3 .work-item-1-head.loaded, .work-row .work-item-3 .work-item-2-head.loaded, .work-row .work-item-3 .work-item-3-head.loaded, .work-row .work-item-3 .work-item-4-head.loaded, .work-row .work-item-3 .work-item-5-head.loaded, .work-row .work-item-3 .work-item-6-head.loaded, .work-row .work-item-4 .work-item-1-head.loaded, .work-row .work-item-4 .work-item-2-head.loaded, .work-row .work-item-4 .work-item-3-head.loaded, .work-row .work-item-4 .work-item-4-head.loaded, .work-row .work-item-4 .work-item-5-head.loaded, .work-row .work-item-4 .work-item-6-head.loaded, .work-row .work-item-5 .work-item-1-head.loaded, .work-row .work-item-5 .work-item-2-head.loaded, .work-row .work-item-5 .work-item-3-head.loaded, .work-row .work-item-5 .work-item-4-head.loaded, .work-row .work-item-5 .work-item-5-head.loaded, .work-row .work-item-5 .work-item-6-head.loaded, .work-row .work-item-6 .work-item-1-head.loaded, .work-row .work-item-6 .work-item-2-head.loaded, .work-row .work-item-6 .work-item-3-head.loaded, .work-row .work-item-6 .work-item-4-head.loaded, .work-row .work-item-6 .work-item-5-head.loaded, .work-row .work-item-6 .work-item-6-head.loaded {
+        opacity: 0;
+        filter: alpha(opacity=0);
+        -webkit-transition: all 500ms ease;
+        transition: all 500ms ease; }
