@@ -12,51 +12,43 @@
   -webkit-box-pack: center;
   justify-content: center; }
   #footer-menu ul {
-    list-style-type: none; }
-
-.footer-logo {
-  width: 40px;
-  height: 40px;
-  margin-top: 20px; }
-
-#footer-menu h3 {
-  max-width: 80vw;
-  font-family: helvetica, sans-serif;
-  font-weight: 100;
-  font-size: 16px;
-  letter-spacing: 1.5px;
-  color: #E0E0E0; }
-
-#footer-menu p {
-  font-family: helvetica, sans-serif;
-  font-weight: 100;
-  font-size: 12px;
-  letter-spacing: 1.5px;
-  color: #E0E0E0;
-  margin-bottom: 50px; }
-
-#footer-menu nav ul {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  align-items: center;
-  padding-left: 0; }
-
-#footer-menu li {
-  -webkit-box-flex: 0;
-  flex: 0 0 2em;
-  font-size: 2em;
-  text-align: center;
-  margin: 0 10px 0 10px; }
-
-#footer-menu a {
-  color: #E0E0E0;
-  text-align: center; }
-
-#footer-menu hr {
-  width: 450px; }
+    list-style-type: none;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-left: 0; }
+  #footer-menu li {
+    -webkit-box-flex: 0;
+    flex: 0 0 2em;
+    font-size: 2em;
+    text-align: center;
+    margin: 0 10px 0 10px; }
+  #footer-menu .footer-logo {
+    width: 40px;
+    height: 40px;
+    margin-top: 20px; }
+  #footer-menu h3 {
+    max-width: 80vw;
+    font-family: helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    color: #E0E0E0; }
+  #footer-menu p {
+    font-family: helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    color: #E0E0E0;
+    margin-bottom: 50px; }
+  #footer-menu a {
+    color: #E0E0E0;
+    text-align: center; }
+  #footer-menu hr {
+    width: 450px; }
