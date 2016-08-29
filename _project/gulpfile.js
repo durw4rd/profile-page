@@ -31,19 +31,19 @@ gulp.task('browserSync', function() {
   })
 })
 
+// another syntax without 'runsequence' plugin
+gulp.task('watch', ['sass', 'browserSync'], function(){
+  gulp.watch('app/sass/**/*.scss', ['sass']);
+  gulp.watch('app/*.html', browserSync.reload);
+  gulp.watch('app/js/**/*.js', browserSync.reload);
+})
+
 // watching requested files, precompiling sass, browser syncronization
 gulp.task('default', function (callback) {
   runSequence(['sass','browserSync', 'watch'],
     callback
   )
-})
-
-// another syntax without 'runsequence' plugin
-// gulp.task('watch', ['sass', 'browserSync'], function(){
-//   gulp.watch('app/sass/**/*.scss', ['sass']);
-//   gulp.watch('app/*.html', browserSync.reload);
-//   gulp.watch('app/js/**/*.js', browserSync.reload);
-// })
+});
 
 
 gulp.task('useref', function(){
@@ -57,22 +57,22 @@ gulp.task('useref', function(){
 
 gulp.task('images', function(){
   return gulp.src('app/images/**/*.+(png|jpg|gif|svg)')
-  .pipe(cache(imagemin())
+  .pipe(cache(imagemin()))
   .pipe(gulp.dest('dist/images'))
 });
 
 gulp.task('fonts', function() {
   return gulp.src('app/fonts/**/*')
   .pipe(gulp.dest('dist/fonts'))
-})
+});
 
 gulp.task('clean:dist', function() {
   return del.sync('dist');
-})
+});
 
 gulp.task('cache:clear', function (callback) {
   return cache.clearAll(callback)
-})
+});
 
 // build task merging several of the above functions together
 gulp.task('build', function (callback) {
@@ -80,4 +80,4 @@ gulp.task('build', function (callback) {
     ['sass', 'useref', 'images', 'fonts'],
     callback
   )
-})
+});
