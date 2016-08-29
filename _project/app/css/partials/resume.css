@@ -1,11 +1,12 @@
 #resume {
   width: 100%;
   background: #212121;
-  display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
-  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   flex-direction: column;
-  -ms-flex-pack: center;
+  -webkit-box-pack: center;
   justify-content: center;
   color: #fff; }
 
@@ -28,14 +29,14 @@
   width: 1024px;
   max-width: 85vw;
   margin: auto;
-  display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
-  -ms-flex-pack: center;
+  -webkit-box-pack: center;
   justify-content: center;
   letter-spacing: 1.5px; }
 
 .left-col {
-  -ms-flex: 1;
+  -webkit-box-flex: 1;
   flex: 1;
   max-width: 240px;
   text-align: left;
@@ -48,7 +49,7 @@
   letter-spacing: 2px; }
 
 .mid-col {
-  -ms-flex: 2;
+  -webkit-box-flex: 2;
   flex: 2;
   text-align: left;
   padding: 15px;
@@ -56,18 +57,22 @@
 
 .mid-col li {
   cursor: pointer;
+  -webkit-transform: translateX(0) scale(1);
   transform: translateX(0) scale(1);
+  -webkit-transition: all 400ms ease;
   transition: all 400ms ease; }
 
 .mid-col li p {
   padding: 2px 0 2px 0; }
 
 .mid-col li:hover {
+  -webkit-transform: translateX(100px) scale(1.5);
   transform: translateX(100px) scale(1.5);
+  -webkit-transition: all 400ms ease;
   transition: all 400ms ease; }
 
 .hidden-col {
-  -ms-flex: 1;
+  -webkit-box-flex: 1;
   flex: 1;
   padding: 15px;
   list-style-type: none; }
@@ -76,28 +81,36 @@
   background-color: #fff;
   opacity: 0;
   filter: alpha(opacity=0);
+  -webkit-transform: translateX(-250px);
   transform: translateX(-250px);
+  -webkit-transition: all 700ms ease;
   transition: all 700ms ease; }
 
 .hidden-col li.awe.loaded {
   width: 300px;
   opacity: 0.7;
   filter: alpha(opacity=70);
+  -webkit-transform: translateX(0);
   transform: translateX(0);
+  -webkit-transition: all 700ms ease;
   transition: all 700ms ease; }
 
 .hidden-col li.goo.loaded {
   width: 250px;
   opacity: 0.55;
   filter: alpha(opacity=55);
+  -webkit-transform: translateX(0);
   transform: translateX(0);
+  -webkit-transition: all 700ms ease;
   transition: all 700ms ease; }
 
 .hidden-col li.cando.loaded {
   width: 200px;
   opacity: 0.4;
   filter: alpha(opacity=40);
+  -webkit-transform: translateX(0);
   transform: translateX(0);
+  -webkit-transition: all 700ms ease;
   transition: all 700ms ease; }
 
 .hidden-col li p {
@@ -107,7 +120,7 @@
   color: #333; }
 
 .right-col {
-  -ms-flex: 3;
+  -webkit-box-flex: 3;
   flex: 3;
   text-align: left;
   list-style-type: none;
