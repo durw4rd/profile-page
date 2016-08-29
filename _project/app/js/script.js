@@ -9,11 +9,11 @@ var main = function(){
 //mobile version
   if ($(window).width() < 900) {
     $('.landing-head').addClass('mobile')
-    $('.mobile-header').addClass('mobile');
+    $('.header-menu').addClass('mobile');
     $('.my-intro').addClass('mobile');
   } else {
     $('.landing-head').removeClass('mobile')
-    $('.mobile-header').removeClass('mobile');
+    $('.header-menu').removeClass('mobile');
     $('.my-intro').removeClass('mobile');
   };
 

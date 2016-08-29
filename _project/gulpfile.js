@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer');
 var browserSync = require('browser-sync').create();
 
 // optimizers
@@ -17,6 +18,9 @@ var runSequence = require('run-sequence');
 gulp.task('sass', function(){
   return gulp.src('app/sass/**/*.scss') // Gets all files ending with .scss in app/scss and children dirs
     .pipe(sass()) // Converts Sass to CSS with gulp-sass
+    .pipe(autoprefixer({
+            browsers: '> 1%'
+        })) // should add browser prefixes automatically
     .pipe(gulp.dest('app/css'))
     .pipe(browserSync.reload({
       stream: true
