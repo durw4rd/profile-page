@@ -19,7 +19,7 @@ gulp.task('sass', function(){
   return gulp.src('app/sass/**/*.scss') // Gets all files ending with .scss in app/scss and children dirs
     .pipe(sass()) // Converts Sass to CSS with gulp-sass
     .pipe(autoprefixer({
-            browsers: '> 1%'
+      browsers: 'last 2 versions, Explorer >= 10, Android >= 4.1, Safari >= 7, iOS >= 7'
         })) // should add browser prefixes automatically
     .pipe(gulp.dest('app/css'))
     .pipe(browserSync.reload({
@@ -44,7 +44,7 @@ gulp.task('watch', ['sass', 'browserSync'], function(){
 
 // watching requested files, precompiling sass, browser syncronization
 gulp.task('default', function (callback) {
-  runSequence(['sass','browserSync', 'watch'],
+  runSequence(['sass', 'browserSync', 'watch'],
     callback
   )
 });

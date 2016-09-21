@@ -135,7 +135,7 @@ var main = function(){
     });
   };
 
-  for(i=1; i<=6; i++) {
+  for(i=1; i<=7; i++) {
     workItemLoad([i]);
   };
 

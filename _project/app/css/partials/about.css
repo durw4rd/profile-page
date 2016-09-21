@@ -3,11 +3,17 @@
   background: -webkit-radial-gradient(#EEEEEE, #EEEEEE, #EEEEEE, #BDBDBD);
   background: radial-gradient(#EEEEEE, #EEEEEE, #EEEEEE, #BDBDBD);
   display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
   -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
   margin: auto;
   /* intial paragraph with surrounding lines */
@@ -54,11 +60,17 @@
     max-width: 85vw;
     min-height: 305px;
     display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
     flex-direction: row;
     -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
     /*flex-wrap: wrap;*/
     margin: 35px 0px 50px 0px;
@@ -67,12 +79,16 @@
     #about .my-intro.mobile {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
               flex-direction: column;
       min-height: 0; }
       #about .my-intro.mobile p {
         margin-top: 50px; }
       #about .my-intro.mobile div {
         -webkit-box-flex: 1;
+        -webkit-flex: 1 1 200px;
+            -ms-flex: 1 1 200px;
                 flex: 1 1 200px; }
     #about .my-intro:hover {
       background-color: #fff;
@@ -87,6 +103,8 @@
       position: relative;
       width: 100%;
       -webkit-box-flex: 0 0 275px;
+      -webkit-flex: 0 0 275px;
+      -ms-flex: 0 0 275px;
       flex: 0 0 275px;
       margin: 15px; }
     #about .my-intro img {
@@ -102,6 +120,8 @@
       z-index: 1; }
     #about .my-intro div {
       -webkit-box-flex: 1 1 500px;
+      -webkit-flex: 1 1 500px;
+      -ms-flex: 1 1 500px;
       flex: 1 1 500px;
       margin: 15px; }
       #about .my-intro div h3 {
@@ -123,11 +143,17 @@
       width: 1024px;
       max-width: 85vw;
       display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
       display: flex;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
       flex-direction: row;
       -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
       justify-content: center; }
       #about .me-on-team .flex-cont h2 {
         opacity: 1;
@@ -158,6 +184,8 @@
         background: url("../../images/social.jpg") no-repeat center center; }
   #about .box1, #about .box2, #about .box3, #about .box4, #about .box5 {
     -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
     flex: 1;
     position: relative;
     height: 300px;
@@ -179,6 +207,8 @@
       transition: all 500ms ease-in-out; }
     #about .box1:hover, #about .box2:hover, #about .box3:hover, #about .box4:hover, #about .box5:hover {
       -webkit-box-flex: 2;
+      -webkit-flex: 2;
+      -ms-flex: 2;
       flex: 2;
       -webkit-transition: all 500ms ease-in-out;
       transition: all 500ms ease-in-out;

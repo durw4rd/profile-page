@@ -1,4 +1,5 @@
 #resume {
+  position: relative;
   width: 100%;
   background: #212121;
   display: -webkit-box;
@@ -26,6 +27,45 @@
   }
   hr {
     width: 40%;
+  }
+  .download-button-loader {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 160px;
+    height: 250px;
+  }
+  .download-button {
+    position: relative;
+
+    width: 18%;
+    margin: 10px auto;
+    form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    button {
+      min-width: 160px;
+      width: 100%;
+      padding: 10px 15px;
+      border: none;
+      background-color: #fff;
+      text-align: center;
+      color: #333;
+      border: 2px solid #212121;
+      font-family: Helvetica, sans-serif;
+      font-size: 1em;
+      line-height: 1.4em;
+      letter-spacing: 1.5px;
+      transition: all 400ms ease-in;
+      &:hover {
+        color: #fff;
+        background-color: #212121;
+        border: 2px solid #fff;
+        transition: all 400ms ease-in;
+      }
+    }
   }
 }
 
@@ -91,6 +131,7 @@
             flex: 1;
     padding: 15px;
     list-style-type: none;
+    min-width: 300px;
     li {
       background-color: #fff;
       opacity: 0;

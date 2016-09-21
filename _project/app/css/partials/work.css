@@ -3,13 +3,21 @@
   background: -webkit-radial-gradient(#EEEEEE, #EEEEEE, #EEEEEE, #BDBDBD);
   background: radial-gradient(#EEEEEE, #EEEEEE, #EEEEEE, #BDBDBD);
   display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
   margin: auto;
   color: #333; }
@@ -36,23 +44,33 @@
   width: 1024px;
   max-width: 85vw;
   display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin-bottom: 40px; }
   .work-row a, .work-row a:active {
     text-decoration: none;
     color: #333;
     vertical-align: middle; }
+  .work-row .work-item-1 {
+    background: url("../..images/screen-curve-fever.png") no-repeat center center fixed;
+    background-size: auto; }
   .work-row .work-item-1, .work-row .work-item-2, .work-row .work-item-3, .work-row .work-item-4, .work-row .work-item-5, .work-row .work-item-6 {
     -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
     flex: 1;
     width: 300px;
     height: 300px;
-    background-color: #333;
     margin: 10px;
     color: #fff;
     text-align: center;
