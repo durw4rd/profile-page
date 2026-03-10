@@ -15,10 +15,10 @@ var del = require('del');
 
 
 gulp.task('sass', function(){
-  return gulp.src('app/sass/**/*.scss')
+  return gulp.src('_project/app/sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer())
-    .pipe(gulp.dest('app/css'))
+    .pipe(gulp.dest('_project/app/css'))
     .pipe(browserSync.reload({
       stream: true
     }))
@@ -27,43 +27,43 @@ gulp.task('sass', function(){
 gulp.task('browserSync', function(done) {
   browserSync.init({
     server: {
-      baseDir: 'app'
+      baseDir: '_project/app'
     },
   });
   done();
 })
 
 gulp.task('watch', function(){
-  gulp.watch('app/sass/**/*.scss', gulp.series('sass'));
-  gulp.watch('app/*.html', browserSync.reload);
-  gulp.watch('app/js/**/*.js', browserSync.reload);
+  gulp.watch('_project/app/sass/**/*.scss', gulp.series('sass'));
+  gulp.watch('_project/app/*.html', browserSync.reload);
+  gulp.watch('_project/app/js/**/*.js', browserSync.reload);
 })
 
 gulp.task('default', gulp.series('sass', 'browserSync', 'watch'));
 
 
 gulp.task('useref', function(){
-  return gulp.src('app/*.html')
+  return gulp.src('_project/app/*.html')
     .pipe(useref())
     // Minifies only if it's a JavaScript/CSS file
     .pipe(gulpIf('*.js', uglify()))
     .pipe(gulpIf('*.css', cssnano()))
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest('_project/dist'))
 });
 
 gulp.task('images', function(){
-  return gulp.src('app/images/**/*.+(png|jpg|gif|svg)')
+  return gulp.src('_project/app/images/**/*.+(png|jpg|gif|svg)')
   .pipe(cache(imagemin()))
-  .pipe(gulp.dest('dist/images'))
+  .pipe(gulp.dest('_project/dist/images'))
 });
 
 gulp.task('fonts', function() {
-  return gulp.src('app/fonts/**/*')
-  .pipe(gulp.dest('dist/fonts'))
+  return gulp.src('_project/app/fonts/**/*')
+  .pipe(gulp.dest('_project/dist/fonts'))
 });
 
 gulp.task('clean:dist', function() {
-  return del(['dist']);
+  return del(['_project/dist']);
 });
 
 gulp.task('cache:clear', function (callback) {
